@@ -1,0 +1,58 @@
+//Header
+ion-header{
+    background: #171717 !important;
+    ion-toolbar{
+        --background: #171717 !important;
+    }
+}
+hr{
+    margin: 20px;
+}
+//account Items
+.account-text{
+    margin: 20px 1.6em;
+    font-size: 19px;
+    font-family: "titamium semi";
+}
+.general-text{
+    margin: 2.5em 1.6em 1em 1.6em;
+    font-size: 19px;
+    font-family: "titamium semi";
+}
+.account-settings-items-wrap{
+    margin: 0px 30px;
+}
+.account-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 5px;
+    h3{
+        font-size: 16px;
+        font-family: "titamium regular";
+        margin: 0;
+    }
+    img{
+        width: 14px;
+    }
+}
+ion-toggle{
+    --background: #bfbfbf;
+    --background-checked: #bfbfbf;
+    --handle-background: #ffffff;
+    --handle-background-checked: #171717;
+}
+.language-drop-down{
+    width: 98%;
+    background: none;
+    box-shadow: none;   
+    background: #edf2f6;
+    border: none;
+    padding-left: 5px;
+    margin: 10px -5px;
+    mat-label{
+        font-family: 'titamium semi';
+        font-size: 18px;
+    }
+}

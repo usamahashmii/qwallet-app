@@ -1,0 +1,33 @@
+.short-cuts-txt{
+    text-align: center;
+    font-size: 16px;
+    font-family: 'titamium Regular';
+    letter-spacing: 0.5px;
+    margin: 20px 0px;   
+}
+.line-break{
+    border-top: 1.5px solid #ccc8c8 !important;
+}
+//Categories part
+.category-icon{
+    width: 28px;
+    fill: #9da0ad;
+    height: 28px;
+  }
+  .category-text{
+    font-size: 12px;
+    font-family: "titamium semi";
+    margin-top: 4px;
+    margin-bottom: 0;
+    color: var(--ion-color-theme-text);
+  }
+  .cat-widgets-col{
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+.remove-icon, .add-icon{
+    width: 15px;
+    position: absolute;
+    top: -5px;
+    right: 20px;
+}

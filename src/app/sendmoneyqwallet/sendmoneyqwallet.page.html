@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <app-header></app-header>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <!--send from-->
+  <div class="ion-display-flex sphere-wrap-div">
+    <div class="sphere-tag">
+      <h3>AB</h3>
+    </div>
+    <div class="sphere-desc-div">
+      <h3>0302-19929102</h3>
+    </div>
+  </div>
+  <!--send to-->
+  <div class="ion-display-flex sphere-wrap-div-send-to">
+    <div class="sphere-tag-send-to">
+      <img class="main-icon" src="assets/imgs/Q iCON.png">
+    </div>
+    <div class="sphere-desc-div">
+      <h3>0302-19929102</h3>
+    </div>
+  </div>
+  <hr>
+  <!--Inputs-->
+  <div class="inputs-wrap-div">
+    <ion-input placeholder="*{{ 'enter_amount_to_send' | translate }}" class="form-control form-control-xl border-light receiver-input"></ion-input>
+    <ion-textarea (ionChange)="messageChangeTxt($event)" placeholder="{{ 'optional_enter_message' | translate }}" class="form-control form-control-xl border-light receiver-input"></ion-textarea>
+    <h3 class="char-count">{{ charCount }} /125 Characters</h3>
+    <ion-button (click)="goToQWalletFin()" class="next-btn">{{ 'next' | translate }}</ion-button>
+  </div>
+  
+  
+
+</ion-content>

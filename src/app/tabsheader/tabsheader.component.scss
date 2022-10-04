@@ -1,0 +1,38 @@
+//Header
+
+.header-wrap-div{
+    display: flex;
+    justify-content: space-around;
+    //align-items: baseline;
+}
+.menu-icon, .bell-icon, .search-icon{
+    width: 20px;
+    height: 20px;
+    margin-left: 25px;
+}
+.bell-icon{
+    margin-top: 4px;
+}
+.notification-icon{
+    width: 9px;
+    height: 9px;
+    background: #ff8d02;
+    position: absolute;
+    right: 0px;
+    border-radius: 50%;
+    top: 2px;
+}
+.search-icon{
+    margin-left: 25px;
+}
+svg{
+    overflow: hidden;
+    fill: #fff;
+    stroke: #fff;
+    width: 23px;
+    height: 25px;
+}
+.app-icon{
+    position: relative;
+    left: -16px;
+}

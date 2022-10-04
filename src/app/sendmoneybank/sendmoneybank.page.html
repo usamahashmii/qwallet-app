@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <app-header></app-header>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <!--send from-->
+  <div class="ion-display-flex sphere-wrap-div">
+    <div class="sphere-tag">
+      <h3>AB</h3>
+    </div>
+    <div class="sphere-desc-div">
+      <h3>0302-19929102</h3>
+    </div>
+  </div>
+  <!--send to-->
+  <div class="ion-display-flex sphere-wrap-div-send-to">
+    <div class="sphere-tag-send-to">
+      <img class="main-icon" src="assets/imgs/002-bank.svg">
+    </div>
+    <div class="sphere-desc-div">
+      <h3>Bank Transfer</h3>
+    </div>
+  </div>
+  <hr>
+  <!--Inputs-->
+  <div class="inputs-wrap-div">
+    
+    <div (click)="selectBank()" class="select-bank-div form-control" [ngClass]="{ 'select-bank-div-active' : openBankDivBool }">
+      <h3>{{ selectedBank }}</h3>
+      <img [ngClass]="{ 'arrow-down-ani' : openBankDivBool }" [class.arrow-right-ani]="!openBankDivBool" src="assets/imgs/001-right-arrow-angle.svg">
+    </div>
+    <div *ngIf="openBankDivBool" class="banks-div form-control">
+      <h3 (click)="bankSelected(bank)" *ngFor="let bank of banksArray; let i = index">{{ bank.name }}</h3>
+    </div>
+
+    <ion-input placeholder="*Enter amount to send" class="form-control form-control-xl border-light receiver-input"></ion-input>
+    <ion-textarea (ionChange)="messageChangeTxt($event)" placeholder="(Optional) Enter message" class="form-control form-control-xl border-light receiver-input"></ion-textarea>
+    <h3 class="char-count">{{ charCount }} /125 Character</h3>
+    <ion-button (click)="goToQWalletFin()" class="next-btn">Next</ion-button>
+  </div>
+  
+  
+
+</ion-content>

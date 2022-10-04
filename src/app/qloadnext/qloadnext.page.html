@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <app-header></app-header>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h3 class="select-amount-txt">{{ 'select_amount' | translate }}</h3>
+  <hr>
+  <div class="ion-display-flex ion-justify-content-around">
+    <div class="profile-info-div ion-display-flex">
+      <img class="invite-user-img" src="assets/imgs/invite-user.svg">
+      <div class="contect-name-div">
+        <h3>02-22912012-22</h3>
+        <h4>Anim Aocia</h4>
+      </div>
+    </div>
+    <mat-form-field class="form-control">
+      <mat-select [(ngModel)]="networkSelected" name="networkSelected" (selectionChange)="networkChoosen($event)">
+        <mat-option value="zong">Zong</mat-option>
+        <mat-option value="warid">Warid</mat-option>
+        <mat-option value="mobilink">Mobilink</mat-option>
+        <mat-option value="ufone">Ufone</mat-option>
+        <mat-option value="telenor">Telenor</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <hr>
+  <h3 class="enter-amount-txt">*{{ 'enter_amount' | translate }}</h3>  
+  <ion-input placeholder="{{ 'enter_number' | translate }}" class="form-control amount-input"></ion-input>
+  <hr>
+  <div class="ion-display-flex alert shadow-soft mb-4 mb-lg-5 load-history-wrap-div ion-align-items-center">
+    <div>
+      <h3 class="coins-count">QCoins 30</h3>
+      <div class="ion-display-flex ion-align-items-center">
+        <h3 class="paid-on-txt">{{ 'paid_on' | translate }}</h3>
+        <h4 class="date-value">02 Aug, 2022</h4>
+      </div>
+    </div>
+    <div>
+      <h3 class="repeat-btn">{{ 'repeat' | translate }}</h3>      
+    </div>
+  </div>
+  <ion-row>
+    <ion-col class="ion-text-center">
+      <ion-button (click)="readyToPay()" class="next-btn">{{ 'pay_now' | translate }}</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>

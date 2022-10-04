@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar>
+    <app-header></app-header>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--Profile-->
+  <div class="profile-wrap-div shadow-soft">
+    <ion-row>
+      <ion-col size="3" class="ion-text-right ion-no-padding">
+        <img class="profile-img" src="assets/imgs/profile.svg">
+      </ion-col>
+      <ion-col>
+        <h3 class="name">Kevin Levin</h3>
+        <h4 class="cell-no">+092-929-828-2</h4>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="openProfile()" class="btn btn-primary edit-btn"><img src="assets/imgs/edit-icon.svg">{{ 'edit' | translate }}</ion-button>
+      </ion-col>
+    </ion-row>
+  </div>  
+  <div class="account-info-div-wrap">
+    <div>
+      <h3>{{ 'current_balance' | translate }}</h3>
+      <h4>q coins 39202</h4>
+    </div>
+    <div>
+      <h3>{{ 'iban' | translate }}</h3>
+      <h4>MN01QW7127167267302</h4>
+    </div>
+    <div>
+      <h3>{{ 'QAccount_level' | translate }}</h3>
+      <h4><img src="assets/imgs/verified-protection.svg">{{ 'semi_verified' | translate }}</h4>
+    </div>
+  </div>
+  <div>
+    <h3 class="limits-text">{{ 'limits_of_qwallet' | translate }}</h3>
+    <hr class="qwallet-limit-border">
+    <!--Sending Limits-->
+    <div class="ion-display-flex ion-justify-content-between">
+      <h4 class="range-text">qCoins {{ coinsDailyRange }}/25000</h4>
+      <h4 class="daily-limits">{{ 'daily_sending_limits' | translate }}</h4>
+    </div>
+    <ion-range (ionChange)="qCoinsRange('dailySending',$event)" max="25000" [value]="coinsDailyRange"></ion-range>
+
+    <div class="ion-display-flex ion-justify-content-between">
+      <h4 class="range-text">qCoins {{ coinsMonthlyRange }}/55000</h4>
+      <h4 class="daily-limits">{{ 'monthly_sending_limits' | translate }}</h4>
+    </div>
+    <ion-range (ionChange)="qCoinsRange('monthlySending',$event)" max="55000" [value]="coinsMonthlyRange"></ion-range>
+
+    <div class="ion-display-flex ion-justify-content-between">
+      <h4 class="range-text">qCoins {{ coinsYearlyRange }}/250000</h4>
+      <h4 class="daily-limits">{{ 'yearly_sending_limits' | translate }}</h4>
+    </div>
+    <ion-range (ionChange)="qCoinsRange('yearlySending',$event)" max="250000" [value]="coinsYearlyRange"></ion-range>
+
+     <!--Receiving Limits-->
+     <div class="ion-display-flex ion-justify-content-between">
+      <h4 class="range-text">qCoins {{ coinsDailyReceivingRange }}/25000</h4>
+      <h4 class="daily-limits">{{ 'daily_receiving_limits' | translate }}</h4>
+    </div>
+    <ion-range (ionChange)="qCoinsRange('dailyReceiving',$event)" max="25000" [value]="coinsDailyReceivingRange"></ion-range>
+
+    <div class="ion-display-flex ion-justify-content-between">
+      <h4 class="range-text">qCoins {{ coinsMonthlyReceivingRange }}/55000</h4>
+      <h4 class="daily-limits">{{ 'monthly_receiving_limits' | translate }}</h4>
+    </div>
+    <ion-range (ionChange)="qCoinsRange('monthlyReceiving',$event)" max="55000" [value]="coinsMonthlyReceivingRange"></ion-range>
+
+    <div class="ion-display-flex ion-justify-content-between">
+      <h4 class="range-text">qCoins {{ coinsYearlyReceivingRange }}/250000</h4>
+      <h4 class="daily-limits">{{ 'yearly_receiving_limits' | translate }}</h4>
+    </div>
+    <ion-range (ionChange)="qCoinsRange('yearlyReceiving',$event)" max="250000" [value]="coinsYearlyReceivingRange"></ion-range>
+
+    <ion-button (click)="saveChanges()" class="save-changes-btn">{{ 'save_changes' | translate }}</ion-button>
+  </div>
+</ion-content>

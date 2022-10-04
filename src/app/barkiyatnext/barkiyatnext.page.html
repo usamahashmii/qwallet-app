@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <app-header></app-header>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="ion-margin-top-15">
+    <ion-col class="ion-text-center">
+      <img class="category-img" src="{{ image }}">
+      <h3 class="category-name">{{ name }}</h3>
+    </ion-col>
+  </ion-row>
+  <hr class="line-break">
+  <div class="ion-display-flex ion-justify-content-center qcoins-count-div-wrap">
+    <h3>QCoins</h3>
+    <h4>77726</h4>
+  </div>
+  <h3 class="available-balance">{{ 'your_available_balance_is' | translate }} QCoins 102292</h3>
+  <h3 class="limit-wont-apply-on-bill">{{ 'your_account_limit_will_not_apply' | translate }}</h3>
+  <h3 class="bill-details">{{ 'bill_details' | translate }}</h3>
+  <hr class="line-break">
+  <div class="bill-details-wrap-div">
+    <div class="ion-justify-content-between ion-display-flex bill-details-div">
+      <h3>{{ 'consumer_name' | translate }}</h3>
+      <h4>Akram Shah</h4>
+    </div>
+    <div class="ion-justify-content-between ion-display-flex bill-details-div">
+      <h3>{{ 'month' | translate }}</h3>
+      <h4>July</h4>
+    </div>
+    <div class="ion-justify-content-between ion-display-flex bill-details-div">
+      <h3>{{ 'date' | translate }}</h3>
+      <h4>29 July 2021</h4>
+    </div>
+    <div class="ion-justify-content-between ion-display-flex bill-details-div">
+      <h3>{{ 'ref_number' | translate }}</h3>
+      <h4>918219082011</h4>
+    </div>
+    <div class="ion-justify-content-between ion-display-flex bill-details-div">
+      <h3>{{ 'status' | translate }}</h3>
+      <h4 class="payment-status-val">{{ 'unpaid' | translate }}</h4>
+    </div>
+  </div>
+  <ion-button (click)="payNow()" class="next-btn">{{ 'pay_now' | translate }}</ion-button>
+</ion-content>

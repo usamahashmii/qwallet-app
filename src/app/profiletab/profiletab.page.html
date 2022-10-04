@@ -1,0 +1,52 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <app-header></app-header>
+  </ion-toolbar>
+</ion-header> -->
+<ion-content>
+  <div class="profile-wrap-div">
+    <div (click)="takeClick()" class="carousel">
+      <img class="profile-img" src="{{ profileData.image }}">
+      <img class="camera-img" src="assets/imgs/camera.svg">
+    </div>
+    <h3 class="name">{{ profileData.name }}</h3>
+    <h4 class="cell-no">+{{ profileData.cellNo }}</h4>
+  </div>
+  
+  <div class="profile-items-wrap">
+    <div (click)="editProfile('Name' , profileData.name)" class="profile-items">
+      <h3>{{ profileData.name }}</h3>
+      <img src="assets/imgs/001-right-arrow-angle.svg">
+    </div>
+    <div (click)="editProfile('cnic' , profileData.cnic)" class="profile-items">
+      <h3>{{ profileData.cnic }}</h3>
+      <img src="assets/imgs/001-right-arrow-angle.svg">
+    </div>
+    <div (click)="editProfile('CellNo', profileData.cellNo)" class="profile-items">
+      <h3>+{{ profileData.cellNo }}</h3>
+      <img src="assets/imgs/001-right-arrow-angle.svg">
+    </div>
+    <div (click)="editProfile('Email', profileData.email)" class="profile-items">
+      <h3>{{ profileData.email }}</h3>
+      <img src="assets/imgs/001-right-arrow-angle.svg">
+    </div>
+    <div class="profile-items">
+      <h3>DOB - {{ profileData.dob }}</h3>
+      <img src="assets/imgs/001-right-arrow-angle.svg">
+    </div>
+    <div (click)="editProfile('country', profileData.location)" class="profile-items">
+      <h3>{{ profileData.location }}</h3>
+      <img src="assets/imgs/001-right-arrow-angle.svg">
+    </div>
+    <div class="profile-items">
+      <h3>QShopping</h3>
+      <img src="assets/imgs/001-right-arrow-angle.svg">
+    </div>
+    <div class="profile-items">
+      <h3>{{ 'shopping_reports' | translate }}</h3>
+      <img src="assets/imgs/001-right-arrow-angle.svg">
+    </div>
+    <ion-button (click)="saveChanges()" class="save-changes-btn">{{ 'save_changes' | translate }}</ion-button>
+  </div>
+  
+</ion-content>

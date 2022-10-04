@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <app-header></app-header>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <h3 class="donations-txt">{{ 'donations' | translate }}</h3>
+  <hr class="separator">
+  <ion-row>
+    <ion-col (click)="donate(val)" class="ion-text-center" *ngFor="let val of donationArray" size="4">
+      <div>
+        <img class="donation-center-img" src="{{ val.image }}">
+        <h3 class="donation-center-name">{{ val.name }}</h3>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-content>

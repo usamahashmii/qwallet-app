@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <app-header></app-header>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <h3 class="account-text">{{ 'account' | translate }}</h3>
+  <hr>
+  <div class="account-settings-items-wrap">
+    <div (click)="itemClicked('accountInfo')" class="account-items">
+      <h3>{{ 'account_info' | translate }}</h3>
+      <img src="assets/imgs/001-right-arrow-angle.svg">
+    </div>
+    <div (click)="itemClicked('debit-card')" class="account-items">
+      <h3>{{ 'order_debit_card' | translate }}</h3>
+      <img src="assets/imgs/001-right-arrow-angle.svg">
+    </div>
+    <div (click)="itemClicked('linkwithbank')" class="account-items">
+      <h3>{{ 'link_with_bank' | translate }}</h3>
+      <img src="assets/imgs/001-right-arrow-angle.svg">
+    </div>
+    <div (click)="itemClicked('changePin')" class="account-items">
+      <h3>{{ 'change_pin' | translate }}</h3>
+      <img src="assets/imgs/001-right-arrow-angle.svg">
+    </div>
+    <div (click)="itemClicked('becomeAMercahnt')" class="account-items">
+      <h3>{{ 'become_a_qwallet_merchant' | translate }}</h3>
+      <img src="assets/imgs/001-right-arrow-angle.svg">
+    </div>
+  </div>
+
+  <h3 class="general-text">{{ 'general' | translate }}</h3>
+  <hr>
+  <div class="account-settings-items-wrap">
+    <div class="account-items">
+      <h3>{{ 'account_info' | translate }}</h3>
+        <!-- Default Toggle -->
+        <ion-toggle></ion-toggle>
+    </div>
+    <div class="account-items">
+      <h3>{{ 'order_debit_card' | translate }}</h3>
+        <!-- Default Toggle -->
+        <ion-toggle></ion-toggle>
+    </div>
+    <mat-form-field class="form-control language-drop-down">
+      <mat-label>Language</mat-label>
+      <mat-select [value]="languageChoosen" [(ngModel)]="languageChoosen" name="languageChoosen" (selectionChange)="switchLanguage($event)">
+        <mat-option value="en">English</mat-option>
+        <mat-option value="mo">Mongolian</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <ion-button (click)="saveChanges()" class="save-changes-btn">{{ 'save_changes' | translate }}</ion-button>
+  </div>
+ 
+</ion-content>

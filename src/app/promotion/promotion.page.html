@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <app-header></app-header>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+   
+  <div class="promotion-wrap-div shadow-soft" *ngFor="let val of promotionArray">
+    <img class="promotion-image" src="{{ val.image }}">
+    <ion-row class="ion-display-flex ion-align-items-center">
+      <ion-col>
+        <h3>Scan & Win is Back <span>Get 50% Off</span></h3>
+      </ion-col>
+      <ion-col size="3" class="ion-margin-right-10">
+        <ion-button class="btn get-now-btn">Get Now</ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

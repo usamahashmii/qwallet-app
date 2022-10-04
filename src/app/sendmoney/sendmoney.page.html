@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-toolbar>
+    <app-header></app-header>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="ion-display-flex contacts-wrap-div">
+    <div class="contacts-count">
+      <h3>21</h3>
+    </div>
+    <div class="contacts-desc-div">
+      <h3>{{ 'you_have_contacts' | translate:contactCount }}</h3>
+      <h3 class="view-all">{{ 'view_all' | translate }}</h3>
+    </div>
+  </div>
+  <hr>
+  <!--Select Favorite-->
+  <h3 class="select-favorite-text"><img src="assets/imgs/001-star.svg">{{ 'select_favorites' | translate }}</h3>
+  <div class="favorites-categories-row ion-margin-top-8">
+    <ng-container *ngFor="let val of favoritesArray; let i=index">
+      <div>
+        <div (click)="selectNumber(val)" class="favorites-categories-wrap" class="shadow-soft btn">
+          <div class="name-div-home" [ngStyle]="{'backgroundColor' : getColor(i)}">{{ getFirstChar(val.name) }}</div>
+          <h3>{{ val.name }}</h3>
+        </div>
+        <h3 (click)="deleteItem(val)" class="delete-btn">{{ 'delete' | translate }}</h3>
+      </div>
+    </ng-container>
+  </div>
+  <hr>
+  <h3 class="select-receiver-txt">{{ 'select_receiver' | translate }}</h3>
+  <div class="search-contact-input-div">
+    <ion-input [(ngModel)]="contact" (click)="pickContact()" placeholder="{{ 'enter_number_or_search_contacts' | translate }}" class="form-control form-control-xl border-light receiver-input"></ion-input>
+    <img src="assets/imgs/search-dark.svg">
+  </div>
+  <h3 class="select-method-txt">{{ 'select_method' | translate }}</h3>
+  <div (click)="openSelector('qwallet-transfer')" class="select-wrap-div btn btn-primary">
+    <div class="ion-display-flex select-child-div">
+      <img class="main-icon" src="assets/imgs/Q iCON.png">
+      <div class="height-line"></div>
+      <div class="selecter-txt">
+        <h3>{{ 'qwallet_mobile_account' | translate }}</h3>
+        <h4>{{ 'free_money_transfer_to_qwallet_account' | translate }}</h4>
+      </div>
+      <div class="forward-btn-div">
+        <img src="assets/imgs/001-right-arrow-angle.svg">
+      </div>
+    </div>
+  </div>
+  <!---->
+  <div (click)="openSelector('cnic-transfer')" class="select-wrap-div btn btn-primary">
+    <div class="ion-display-flex select-child-div">
+      <img class="main-icon" src="assets/imgs/001-membership.svg">
+      <div class="height-line"></div>
+      <div class="selecter-txt">
+        <h3>{{ 'qwallet_mobile_account' | translate }}</h3>
+        <h4>{{ 'free_money_transfer_to_cnic' | translate }}</h4>
+      </div>
+      <div class="forward-btn-div">
+        <img src="assets/imgs/001-right-arrow-angle.svg">
+      </div>
+    </div>
+  </div>
+  <!--Bank Transfer-->
+  <div (click)="openSelector('bank-transfer')" class="select-wrap-div btn btn-primary">
+    <div class="ion-display-flex select-child-div">
+      <img class="main-icon" src="assets/imgs/002-bank.svg">
+      <div class="height-line"></div>
+      <div class="selecter-txt">
+        <h3>{{ 'qwallet_mobile_account' | translate }}</h3>
+        <h4>{{ 'free_money_transfer_to_bank_account' | translate }}</h4>
+      </div>
+      <div class="forward-btn-div">
+        <img src="assets/imgs/001-right-arrow-angle.svg">
+      </div>
+    </div>
+  </div>
+
+</ion-content>

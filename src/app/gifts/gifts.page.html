@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <app-header></app-header>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <h3 class="send-gift-txt">{{ 'send_gifts' | translate }}</h3>
+  <hr class="separator">
+  <h3 class="select-theme">{{ 'select_themes' | translate }}</h3>
+  <div class="ion-display-flex top-btns">
+    <ion-button (click)="openTransactionPage('Just For You')" style="--background: #b20045;">{{ 'just_for_you' | translate }}</ion-button>
+    <ion-button (click)="openTransactionPage('Best Wishes')" style="--background: #006666;">{{ 'best_wishes' | translate }}</ion-button>
+    <ion-button (click)="openTransactionPage('Live Long')" style="--background: #003399;margin-right: 0;">{{ 'live_long' | translate }}</ion-button>
+  </div>
+  <hr class="separator">
+  <!--inputs-->
+  <div>
+    <div class="carousel">
+      <ion-input [(ngModel)]="contact" type="text" class="form-control" placeholder="{{ 'enter_number' | translate }}"></ion-input>
+      <div class="vl"><div></div><img (click)="contacts()" class="invite-user-img" src="assets/imgs/invite-user.svg"></div>
+    </div>
+    <div>
+      <ion-input class="recei-name form-control" placeholder="{{ 'receiver_name' | translate}}"></ion-input>
+    </div>
+    <div>
+      <ion-input class="gift-amount form-control" placeholder="{{ 'gift_amount' | translate}}"></ion-input>
+    </div>
+    <div>
+      <ion-input class="add-message form-control" placeholder="{{ 'add_a_message' | translate}}"></ion-input>
+    </div>
+  </div>
+  <ion-button (click)="sendGift()" class="send-gift-btn">{{ 'send_gift' | translate}}</ion-button>
+</ion-content>

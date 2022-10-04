@@ -1,0 +1,87 @@
+<ion-app>
+  <!--Apps Menu Bar-->
+  <ion-menu id="apps-menu" side="end" type="overlay" contentId="main" menuId="appsMenu">
+    <ion-content>
+      <ion-row class="padding-bottom-10" style="padding-top: 1.45em;">
+        <ion-col class="ion-text-center">
+          <img class="side-toggle-apps-icon" src="assets/imgs/emojis/q-box.svg">
+          <h3 class="side-toggle-apps-text">Qbox</h3>
+        </ion-col>
+        <ion-col class="ion-text-center">
+          <img class="side-toggle-apps-icon" src="assets/imgs/emojis/q-messenger.svg">
+          <h3 class="side-toggle-apps-text">QMessenger</h3>
+        </ion-col>
+      </ion-row>
+      <ion-row class="padding-bottom-10">
+        <ion-col class="ion-text-center">
+          <img class="side-toggle-apps-icon" src="assets/imgs/emojis/q-news.svg">
+          <h3 class="side-toggle-apps-text">QNews</h3>
+        </ion-col>
+        <ion-col class="ion-text-center">
+          <img class="side-toggle-apps-icon" src="assets/imgs/emojis/q-wallet.svg">
+          <h3 class="side-toggle-apps-text">QWallet</h3>
+        </ion-col>
+      </ion-row>
+      <ion-row class="padding-bottom-10">
+        <ion-col class="ion-text-center">
+          <img class="side-toggle-apps-icon" src="assets/imgs/emojis/q-insurance.svg">
+          <h3 class="side-toggle-apps-text">QInsurance</h3>
+        </ion-col>
+        <ion-col class="ion-text-center">
+          <img class="side-toggle-apps-icon" src="assets/imgs/emojis/q-commerce.svg">
+          <h3 class="side-toggle-apps-text">QEcommerce</h3>
+        </ion-col>
+      </ion-row>
+      <ion-row class="padding-bottom-10">
+        <ion-col class="ion-text-center">
+          <img class="side-toggle-apps-icon" src="assets/imgs/emojis/q-taxi.svg">
+          <h3 class="side-toggle-apps-text">QTaxi</h3>
+        </ion-col>
+        <ion-col class="ion-text-center">
+          <img class="side-toggle-apps-icon" src="assets/imgs/emojis/q-social.svg">
+          <h3 class="side-toggle-apps-text">QSocial</h3>
+        </ion-col>
+      </ion-row>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+  
+  <ion-split-pane contentId="main-content">
+    <!---Main Menu--->
+    <ion-menu id="main-menu" menuId="mainMenu" contentId="main-content" type="reveal">
+      <img (click)="closeMenu()" class="close-btn-icon" src="assets/imgs/close.svg">
+     
+      <ion-list class="main-menu-list">
+        <!-- <img class="" src="assets/imgs/001-right-arrow-angle.svg"> -->
+        <ion-row (click)="openProfile()">
+          <ion-col size="4" class="ion-text-right ion-no-padding">
+            <img class="profile-img" [src]="profileData.image_url ? profileData.image_url : 'assets/imgs/profile.svg'">
+          </ion-col>
+          <ion-col class="ion-padding-top-8">
+            <h3 class="name">{{ profileData.name }}</h3>
+            <h4 class="cell-no">{{ profileData.phone_code }}-{{ profileData.phone_number }}</h4>
+          </ion-col>
+        </ion-row>
+      </ion-list>
+      <ion-content>
+        <div class="menu-items-div">
+          <h3 (click)="openSideMenuItem('accounts')">{{ 'account_settings' | translate }}</h3>
+          <h3 (click)="openSideMenuItem('transactions')">{{ 'transaction_history' | translate }}</h3>
+          <h3 (click)="openSideMenuItem('favorites')">{{ 'favorites' | translate }}</h3>
+          <!-- <h3 (click)="openSideMenuItem('reports')">Reports</h3> -->
+          <h3 (click)="openSideMenuItem('invite')">{{ 'invite_a_friend' | translate }}</h3>
+          <h3 (click)="openSideMenuItem('help')">{{ 'help_faq' | translate }}</h3>
+          <h3 (click)="openSideMenuItem('chat')">{{ 'chat_with_support' | translate }}</h3>
+          <h3 (click)="openSideMenuItem('news')">{{ 'whats_new' | translate }}</h3>
+          <!-- <h3 (click)="switchLanguage('mo')">Language</h3> -->
+
+        </div>
+        <div class="main-menu-bottom">
+          <h3>version vqw.0.0.1</h3>
+          <img (click)="logout()" class="logout-icon" src="assets/imgs/002-logout.svg">
+        </div>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

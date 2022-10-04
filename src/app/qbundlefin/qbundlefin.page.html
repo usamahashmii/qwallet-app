@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <app-header></app-header>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <h3 class="select-bundles-txt">{{ 'select_bundles' | translate }}</h3>
+  <hr>
+  <div class="network-scroll-wrap-div">
+    <div *ngFor="let value of callingNetworks" (click)="chooseNetwork(value)">
+      <ion-button class="network-name" [class.network-shadow-class]="value.name == selectedNetwork">
+        <img src="{{ value.img }}">
+        <h3>Hello</h3>
+      </ion-button>
+      <span></span>
+    </div>  
+  </div>
+  <div class="carousel">
+    <ion-input [(ngModel)]="contact" type="text" class="form-control" placeholder="{{ 'enter_number' | translate }}"></ion-input>
+    <div class="vl"><div></div><img (click)="pickContact()" class="invite-user-img" src="assets/imgs/invite-user.svg"></div>
+  </div>
+  <hr>
+  <div class="ion-display-flex ion-justify-content-between network-bottom-details">
+    <h3>{{ 'operator' | translate }}</h3> 
+    <h4>Telenor</h4> 
+  </div>
+  <div class="ion-display-flex ion-justify-content-between network-bottom-details">
+    <h3>{{ 'package_name' | translate }}</h3> 
+    <h4>QCard</h4> 
+  </div>
+  <div class="ion-display-flex ion-justify-content-between network-bottom-details">
+    <h3>{{ 'fee_taxes' | translate }}</h3>
+    <ion-button>{{ 'free' | translate }}</ion-button>
+  </div>
+  <h3 class="qcoins-txt">QCoins</h3>
+  <h3 class="qcoins-val">30</h3>
+  <ion-button (click)="readyToPay()" class="pay-now-btn">{{ 'pay_now' | translate }}</ion-button>
+</ion-content>

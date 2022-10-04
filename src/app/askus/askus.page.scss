@@ -1,0 +1,30 @@
+.separator{
+    border-top: 1px solid #cecece;
+}
+.faqs-txt{
+    font-size: 16px;
+    margin: 3em 0em 0em 0em;
+    text-align: center;
+    font-family: 'titamium Regular';
+}
+.question-wrap-div{
+    margin: 15px 20px 10px 20px;
+    border-radius: 5px;
+    .question-div{
+        justify-content: space-between;
+        padding: 8px;
+        h3{
+            font-size: 13px;
+            font-family: 'titamium Regular';
+            letter-spacing: 0.5px;
+        }
+    }
+}
+.answer-txt{
+    font-size: 14px;
+    font-family: 'titamium Regular';
+    margin: 5px 20px 5px 10px;
+}
+.expand-wrapper{
+    border-top: 1px solid #e0e0e0
+}

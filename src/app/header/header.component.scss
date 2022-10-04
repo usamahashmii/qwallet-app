@@ -1,0 +1,26 @@
+//Header
+ion-header{
+    background: #171717 !important;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 56px;
+    ion-toolbar{
+        --background: #171717 !important;
+        padding-top: 4px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+.header-wrap-div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.back-btn{
+    width: 18px;
+    position: absolute;
+    left: 15px;
+}
+.app-icon{
+
+}

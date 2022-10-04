@@ -1,0 +1,126 @@
+.stepper-wrap-div{
+    align-items: center;
+    padding: 2em;
+}
+.sphere-tag, .sphere-tag-send-to{
+    background: #f9d088;
+    border-radius: 50%;
+    height: 40px;
+    min-width: 40px;
+    display: grid;
+    align-items: center;
+    position: relative;
+    h3{
+        font-size: 13px;
+        font-family: 'titamium semi';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+    }
+    img{
+        min-width: 16px;
+        height: 16px;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+    }
+}
+.forward-icon-div{
+    min-width: 45px;
+    height: 45px;
+    background: #171717;
+    border-radius: 50%;
+    position: relative;
+    display: grid;
+    align-items: center;
+    img{
+        width: 15px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.sphere-tag-send-to{
+    background: #8fd7c0 !important;
+}
+ion-progress-bar{
+    --background: #171717;
+    height: 3px;
+}
+//amount div
+.amount-wrap-div{
+    h4{
+        font-family: 'titamium regular';
+        font-size: 17px;
+        text-align: center;
+        margin-bottom: 3px;
+    }
+}
+//Receiver account detail 
+.receiver-account-detail-wrap-div{
+    padding: 0em 2em 0em 2em;
+    h3{
+        font-size: 13px;
+        font-family: "titamium regular";
+        margin-bottom: 4px;
+    }
+}
+//Taxes
+.taxes-wrap-div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0em 2em 0em 2em;
+    .free-tax-txt{
+        font-size: 14px;
+        font-family: 'titamium Regular';
+    }
+    div{
+        background: #589fe6;
+        border-radius: 30px;
+        width: 70px;
+        display: grid;
+        align-items: center;
+        height: 21px;
+        h3{
+            font-size: 12px;
+            font-family: 'titamium semi';
+            text-transform: uppercase;
+            text-align: center;
+            color: #fff;
+            margin: 0;
+        }
+    }
+}
+.name-wrap-div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0em 2em 0em 2em;
+    h3{
+        font-size: 14px;
+        font-family: 'titamium Regular';
+    }
+}
+//Message
+.message-wrap-div{
+    padding: 0em 2em 0em 2em;
+    h3{
+        font-size: 14px;
+        font-family: 'titamium Regular';
+    }
+}
+.message-txt{
+    font-size: 18px;
+    font-family: 'titamium regular';
+}
+.message-input{
+    background: none;
+    padding: 0px 10px;
+    font-size: 14px;
+    font-family: 'titamium semi';
+    border-radius: 16px;
+    height: 85px;
+}
+.next-btn{
+    width: 100%;
+}

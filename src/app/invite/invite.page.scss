@@ -1,0 +1,43 @@
+.invite-text{
+    margin: 20px;
+    font-size: 18px;
+    font-family: 'titamium Regular';
+}
+.carousel{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+.form-control{
+    height: 45px;
+    font-family: 'titamium semi';
+    font-size: 18px;
+    --padding-end: 3em;
+    --padding-start: 20px;
+}
+.vl{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 9999;
+    right: 0;
+    top: 0;
+    top: 0;
+    height: 45px;
+    div{
+        border-left: 1px solid #828588;
+        height: 20px;
+    }
+}
+.invite-user-img{
+    width: 24px;
+    margin: 10px;
+}
+.invite-btn{
+    float: unset;
+    display: flex;
+    width: 90%;
+    margin: 2.5em auto;
+    height: 40px;
+    font-size: 15px;
+}

@@ -1,0 +1,68 @@
+.select-amount-txt{
+    font-size: 16px;
+    padding: 20px 20px 0px 25px;
+}
+.profile-info-div{
+    .invite-user-img{
+        width: 40px;
+        margin-right: 10px;
+    }
+    .contect-name-div{
+        h3{
+            font-size: 15px;
+            font-family: 'titamium semi';
+            margin: 0;
+        }
+        h4{
+            font-size: 15px;
+            font-family: 'titamium Regular';
+            margin: 0;
+        }
+    }
+}
+mat-form-field{
+    font-size: 14px;
+    font-weight: 500;
+    width: 30% !important;
+}
+.enter-amount-txt{
+    font-size: 15px;
+    padding: 0px 20px 0px 20px;
+}
+.amount-input{
+    width: 89%;
+    margin: 0 auto;
+    background: none;
+    font-family: 'titamium Regular';
+    font-size: 14px;
+    --padding-start: 15px;
+}
+.load-history-wrap-div{
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    justify-content: space-between;;
+    padding: 10px 15px 5px 15px;
+}
+.coins-count{
+    font-size: 15px;
+}
+.paid-on-txt{
+    font-size: 14px;
+}
+.repeat-btn{
+    color: #dc4f4f;
+    margin-right: 10px;
+}
+.date-value, .repeat-btn{
+    font-size: 14px;
+    font-family: 'titamium semi';
+}
+.date-value{
+    margin-left: 25px;
+    color: #8a8a8a;
+}
+.next-btn{
+    float: unset;
+    width: 90%;
+}

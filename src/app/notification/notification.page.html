@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <app-header></app-header>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <h3 class="notifications-text">{{ 'notifications' | translate }}</h3>
+  <div class="notification-wrap-div">
+    <ng-container *ngFor="let val of notificationArray; let i = index">
+      <div [ngClass]="{ 'notification-inner-div' : i % 2 == 0 }">
+        <div [ngStyle]="{'backgroundColor' : getColor(i)}">{{ getFirstChar(val.text) }} <img src="assets/imgs/bell.svg"></div>
+        <h4>{{ val.text }}</h4>
+      </div>
+    </ng-container>
+  </div>
+</ion-content>

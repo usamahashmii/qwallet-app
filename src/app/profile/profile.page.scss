@@ -1,0 +1,66 @@
+//Header
+ion-header{
+    background: #171717 !important;
+    ion-toolbar{
+        --background: #171717 !important;
+    }
+}
+.profile-wrap-div{
+    display: grid;
+    justify-content: center;
+    padding-top: 1.5em;
+    margin-bottom: 4em;
+    // border-bottom: 1px solid #e0e0e0;
+}
+.profile-img{
+    margin: 0;
+    width: 65px !important;
+    height: 65px !important;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    border-radius: 50%;
+    object-fit: cover !important;
+}
+.camera-img{
+    width: 20px;
+    position: absolute;
+    bottom: 10px;
+    right: -5px;
+}
+.name{
+    text-align: center;
+    font-size: 18px;
+}
+.cell-no{
+    text-align: center;
+    font-size: 13px;
+    margin-top: 6px;
+}
+.carousel {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65px !important;
+}
+//Profile Items
+.profile-items-wrap{
+    margin: 0px 30px;
+}
+.profile-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 5px;
+    h3{
+        font-size: 16px;
+        font-family: "titamium semi";
+        margin: 0;
+    }
+    img{
+        width: 14px;
+    }
+}

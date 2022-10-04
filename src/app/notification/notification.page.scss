@@ -1,0 +1,45 @@
+//Header
+ion-header{
+    background: #171717 !important;
+    ion-toolbar{
+        --background: #171717 !important;
+    }
+}
+.notifications-text{
+    font-size: 18px;
+    font-family: "titamium semi";
+    margin: 15px 10px 15px 12px;
+}
+.notification-wrap-div{
+    div{
+        display: flex;
+        padding: 8px;
+        div{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            text-align: center;
+            display: grid;
+            align-items: center;
+            margin: 0;
+            font-family: "titamium semi";
+            position: relative;
+            img{
+                width: 12px;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                filter: brightness(0.5);
+            }
+        }
+        h4{
+            font-size: 14px;
+            font-family: "titamium semi";
+            margin: 13px 15px;
+        }
+    }
+}
+.notification-inner-div{
+    background: #dee3e8;
+    display: grid;
+}

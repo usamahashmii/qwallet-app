@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <app-header></app-header>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <h3 class="invite-text">{{ 'invite_a_friend' | translate }}</h3>  
+  <hr>
+  <div class="carousel">
+    <ion-input type="number" class="form-control" placeholder="03XX-XXXXXXX"></ion-input>
+    <div class="vl"><div></div><img class="invite-user-img" src="assets/imgs/invite-user.svg"></div>
+  </div>
+  <ion-button (click)="invite()" class="invite-btn">{{ 'invite'| translate }}</ion-button>
+</ion-content>

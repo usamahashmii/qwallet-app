@@ -1,0 +1,44 @@
+.select-payment-txt{
+    text-align: center;
+    font-size: 16px;
+    font-family: 'titamium Regular';
+    letter-spacing: 0.5px;
+    margin: 20px 0px;
+}
+.line-break{
+    border-top: 1.5px solid #ccc8c8 !important;
+}
+//Payments
+.qload-bungle-div, .send-money-div{
+    background: #dbdbdb;
+    padding: 5px 5px 5px 15px;
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 7px;
+    h3{
+        font-size: 11px;
+        margin: 0;
+        font-family: 'titamium Regular';
+    }
+}
+.categories-wrap-row{
+    margin: 15px 0px;
+}
+.categories-wrap-div{
+    width: 75%;
+    height: 70px;
+    border: none;
+    box-shadow: none;
+    margin: 0 auto;
+    padding-top: 10px;
+    h3{
+        font-size: 11px;
+        margin-top: 5px;
+        font-family: 'titamium Regular';
+    }
+    .bundle-icon{
+        width: 30px;
+        height: 30px;
+    }
+}
+

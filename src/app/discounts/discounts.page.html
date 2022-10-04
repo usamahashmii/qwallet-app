@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <app-header></app-header>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <h3 class="discounts-txt">{{ 'discounts' | translate }}</h3>
+  <hr class="separator">
+  <div class="wrap-div">
+    <div *ngFor="let val of discountArray" class="carousel">
+      <h3 class="offer-txt">{{ 'buy' | translate }} {{ val.offer_buy }} {{ 'get' | translate }} {{ val.offer_get }}</h3>
+      <img class="cover-img" src="{{ val.coverImage }}">
+      <div class="child-block">
+        <div class="ion-display-flex rating-value-div">
+          <img src="assets/imgs/cursor.svg">
+          <h3>{{ val.rating }}</h3>
+        </div>
+        <img src="{{ val.blockImage }}">
+      </div>
+    </div>
+  </div>
+  
+</ion-content>

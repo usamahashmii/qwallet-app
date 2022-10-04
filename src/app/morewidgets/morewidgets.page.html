@@ -1,0 +1,228 @@
+<ion-header>
+  <ion-toolbar>
+    <app-header></app-header>
+  </ion-toolbar>
+</ion-header>
+<ion-content> 
+  <h3 class="view-all-cat-txt">{{ 'view_all_categories' | translate }}</h3>
+  <hr class="line-break">
+  <!--QLoad & QBundles-->
+  <div>
+    <div class="qload-bungle-div">
+      <h3>QLoad & QBundles</h3>
+    </div>
+    <ion-row class="categories-wrap-row">
+      <ion-col (click)="openCategory('load-bundle')" class="ion-text-center">
+        <div class="categories-wrap-div btn">
+          <img class="bundle-icon" src="assets/imgs/004-smartphone.svg">
+          <h3>
+            QLoad
+          </h3>
+        </div>
+      </ion-col>
+      <ion-col (click)="openCategory('load-bundle')" class="ion-text-center">
+        <div class="categories-wrap-div btn">
+          <img class="bundle-icon" src="assets/imgs/004-smartphone.svg">
+          <h3>
+            QBundles
+          </h3>
+        </div>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>  
+    <!--Send Money-->
+    <div class="send-money-div">
+      <h3>{{ 'send_money' | translate }}</h3>
+    </div>
+    <ion-row class="categories-wrap-row">
+      <ion-col (click)="openCategory('wallet-cnic-bank')" class="ion-text-center">
+        <div class="categories-wrap-div btn">
+          <img class="bundle-icon" src="assets/imgs/001-membership.svg">
+          <h3>
+            QWallet
+          </h3>
+        </div>
+      </ion-col>
+      <ion-col (click)="openCategory('wallet-cnic-bank')" class="ion-text-center">
+        <div class="categories-wrap-div btn">
+          <img class="bundle-icon" src="assets/imgs/001-membership.svg">
+          <h3>
+            CNIC
+          </h3>
+        </div>
+      </ion-col>
+      <ion-col (click)="openCategory('wallet-cnic-bank')" class="ion-text-center">
+        <div class="categories-wrap-div btn">
+          <img class="bundle-icon" src="assets/imgs/002-bank.svg">
+          <h3>
+            Bank
+          </h3>
+        </div>
+      </ion-col>
+    </ion-row>  
+    <!--Games-->
+    <div class="send-money-div">
+      <h3>{{ 'games' | translate }}</h3>
+    </div>
+    <ion-row class="categories-wrap-row">
+      <ion-col class="ion-text-center">
+        <div class="categories-wrap-div btn">
+          <img class="bundle-icon" src="assets/imgs/005-console.svg">
+          <h3>
+            Games
+          </h3>
+        </div>
+      </ion-col>
+      <ion-col></ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+    <!--Bill Payments-->
+    <div class="send-money-div">
+      <h3>{{ 'bill_payments' | translate }}</h3>
+    </div>
+    <ion-row class="categories-wrap-row">
+      <ion-col (click)="openCategory('bill-payments')" class="ion-text-center">
+        <div class="categories-wrap-div btn">
+          <img class="bundle-icon" src="assets/imgs/power-tower.svg">
+          <h3>
+            {{ 'electricity' | translate }}
+          </h3>
+        </div>
+      </ion-col>
+      <ion-col (click)="openCategory('bill-payments')" class="ion-text-center">
+        <div class="categories-wrap-div btn">
+          <img class="bundle-icon" src="assets/imgs/006-telephone.svg">
+          <h3>
+            {{ 'telephone' | translate }}
+          </h3>
+        </div>
+      </ion-col>
+      <ion-col (click)="openCategory('bill-payments')" class="ion-text-center">
+        <div class="categories-wrap-div btn">
+          <img class="bundle-icon" src="assets/imgs/007-fire.svg">
+          <h3>
+            {{ 'gas' | translate }}
+          </h3>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="categories-wrap-row">
+      <ion-col (click)="openCategory('bill-payments')" class="ion-text-center">
+        <div class="categories-wrap-div btn">
+          <img class="bundle-icon" src="assets/imgs/008-world.svg">
+          <h3>
+            {{ 'internet' | translate }}
+          </h3>
+        </div>
+      </ion-col>
+      <ion-col (click)="openCategory('bill-payments')" class="ion-text-center">
+        <div class="categories-wrap-div btn">
+          <img class="bundle-icon" src="assets/imgs/009-drops.svg">
+          <h3>
+            {{ 'water' | translate }}
+          </h3>
+        </div>
+      </ion-col>
+      <ion-col (click)="openCategory('credit-card')" class="ion-text-center">
+        <div class="categories-wrap-div btn">
+          <img class="bundle-icon" src="assets/imgs/010-credit-card.svg">
+          <h3>
+            {{ 'credit_card' | translate }}
+          </h3>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="categories-wrap-row">
+      <ion-col (click)="openCategory('bill-payments')" class="ion-text-center">
+        <div class="categories-wrap-div btn">
+          <img class="bundle-icon" src="assets/imgs/011-mortarboard.svg">
+          <h3>
+            {{ 'education' | translate }}
+          </h3>
+        </div>
+      </ion-col>
+      <ion-col (click)="openCategory('bill-payments')" class="ion-text-center">
+        <div class="categories-wrap-div btn">
+          <img class="bundle-icon" src="assets/imgs/013-crown.svg">
+          <h3>
+            {{ 'gov_fees' | translate }}
+          </h3>
+        </div>
+      </ion-col>
+      <ion-col>
+      </ion-col>
+    </ion-row>
+    <!--Payments-->
+    <!-- <div class="send-money-div">
+      <h3>{{ 'payments' | translate }}</h3>
+    </div>
+    <ion-row class="categories-wrap-row">
+      <ion-col class="ion-text-center">
+        <div class="categories-wrap-div btn">
+          <img class="bundle-icon" src="assets/imgs/014-pay.svg">
+          <h3>
+           {{ 'loan_payments' | translate }}
+          </h3>
+        </div>
+      </ion-col>
+      <ion-col class="ion-text-center">
+        <div class="categories-wrap-div btn">
+          <img class="bundle-icon" src="assets/imgs/016-online-payment.svg">
+          <h3>
+            {{ 'online_payments' | translate }}
+          </h3>
+        </div>
+      </ion-col>
+      <ion-col (click)="openCategory('donation')" class="ion-text-center">
+        <div class="categories-wrap-div btn">
+          <img class="bundle-icon" src="assets/imgs/015-hand.svg">
+          <h3>
+            {{ 'donation' | translate }}
+          </h3>
+        </div>
+      </ion-col>
+    </ion-row> -->
+     <!--Others-->
+     <div class="send-money-div">
+      <h3>{{ 'others' | translate }}</h3>
+    </div>
+    <ion-row class="categories-wrap-row">
+      <ion-col class="ion-text-center">
+        <div class="categories-wrap-div btn">
+          <img class="bundle-icon" src="assets/imgs/014-pay.svg">
+          <h3>
+            QInsurance
+          </h3>
+        </div>
+      </ion-col>
+      <ion-col class="ion-text-center">
+        <div class="categories-wrap-div btn">
+          <img class="bundle-icon" src="assets/imgs/016-online-payment.svg">
+          <h3>
+            QBox
+          </h3>
+        </div>
+      </ion-col>
+      <ion-col class="ion-text-center">
+        <div class="categories-wrap-div btn">
+          <img class="bundle-icon" src="assets/imgs/015-hand.svg">
+          <h3>
+            QShop
+          </h3>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="categories-wrap-row">
+      <ion-col class="ion-text-center">
+        <div class="categories-wrap-div btn">
+          <img class="bundle-icon" src="assets/imgs/016-online-payment.svg">
+          <h3>
+            QTaxi
+          </h3>
+        </div>
+      </ion-col>
+      <ion-col></ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+  </div>
+</ion-content>

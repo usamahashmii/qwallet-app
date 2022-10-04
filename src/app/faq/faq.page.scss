@@ -1,0 +1,57 @@
+.help-faq-main-img{
+    width: 90%;
+    object-fit: cover;
+    margin: 20px auto;
+    border-radius: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.how-can-help-text{
+    font-size: 20px;
+    text-align: center;
+    margin: 10px auto;
+}
+.separator{
+    border-top: 1.5px solid #9a9898;
+}
+.help-faq-wrap-row{
+    margin: 20px;
+}
+.help-faq-wrap-col{
+    margin: 0px 6px;
+}
+.help-faq-wrap-div{
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 10px;
+}
+.faq-help-title{
+    font-size: 14px;
+    font-family: 'titamium semi';
+    margin: 0px 0px 10px 11px;
+}
+.help-faq-qwallet-logo{
+    width: 35%;
+    margin: 0px 10px 0px 0px;
+}
+.help-faq-normal-icons{
+    width: 12%;
+    margin: 0px 10px 0px 0px;
+}
+.faq-help-desc{
+    font-size: 13px;
+    font-family: 'titamium Regular';
+    text-align: start;
+    margin: 0px 0px 10px 10px;
+}
+.right-arrow{
+    width: 12px;
+    margin-right: 10px;
+}
+.chat-support-btn{
+    float: unset;
+    display: flex;
+    width: 88%;
+    margin: 2.5em auto 5px auto;
+}

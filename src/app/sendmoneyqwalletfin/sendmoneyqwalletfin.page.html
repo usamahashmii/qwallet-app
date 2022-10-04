@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <app-header></app-header>
+  </ion-toolbar>
+</ion-header>
+<ion-content> 
+  <div class="ion-display-flex stepper-wrap-div">
+    <div class="sphere-tag">
+      <h3>AB</h3>
+    </div>
+    <ion-progress-bar></ion-progress-bar>
+    <div class="forward-icon-div">
+      <img src="assets/imgs/right-arrow.svg">
+    </div>
+    <ion-progress-bar></ion-progress-bar>
+    <div class="sphere-tag-send-to">
+      <img class="main-icon" src="{{ sendTypeIcon }}">
+    </div>
+  </div>
+  <div class="amount-wrap-div">
+    <h4>QCoins</h4>
+    <h4>130</h4>
+  </div>
+  <hr>
+  <!--Receiver Account Details-->
+  <div class="receiver-account-detail-wrap-div">
+    <h3>{{ 'receiver_account_title' | translate }}</h3>
+    <h3>Kumble Mai</h3>
+    <h3>02-99220-929</h3>
+  </div>
+  <hr>
+  <!--Taxes-->
+  <div class="taxes-wrap-div">
+    <h3 class="free-tax-txt">{{ 'fee_taxes' | translate }}</h3>
+    <div><h3>{{ 'free' | translate }}</h3></div>
+  </div>
+  <div class="name-wrap-div">
+    <h3>Kumble Mai</h3>
+    <h3>QCoins 130</h3>
+  </div>
+  <hr>
+  <!--message-->
+  <div class="message-wrap-div">
+    <h3 class="message-txt">{{ 'message' | translate }}</h3>
+    <ion-textarea class="form-control form-control-xl border-light receiver-input message-input" placeholder="{{ 'type_a_message_here' | translate }}"></ion-textarea>
+    <ion-button (click)="transactionDetails()" class="next-btn"> {{ 'next' | translate }}</ion-button>
+  </div>
+ 
+</ion-content>

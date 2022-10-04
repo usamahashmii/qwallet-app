@@ -1,0 +1,72 @@
+//Header
+ion-header{
+    background: #171717 !important;
+    ion-toolbar{
+        --background: #171717 !important;
+    }
+}
+.select-bank-div{
+    margin: 25px auto 0px auto;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    width: 92%;
+    transition: none;
+    h3{
+        font-size: 16px;
+        font-family: 'titamium semi';
+        margin: 0;
+    }
+    img{
+        width: 16px;
+    }
+}
+.select-bank-div-active{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.banks-div{
+    // transition: all 0.3s ease-in-out;
+    visibility: visible;
+    background: #e6e7ee;
+    width: 92%;
+    margin: 0 auto;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    height: auto;
+    margin-top: -1px;
+    position: absolute;
+    z-index: 9999;
+    left: 50%;
+    transform: translateX(-50%);
+    h3{
+        font-size: 16px;
+        font-family: 'titamium semi';
+        border-bottom: 1px solid #ababab;
+        padding-bottom: 10px;
+    }
+}
+
+.or-text{
+    text-align: center;
+    font-family: 'titamium semi';
+    font-size: 16px;
+    margin: 12px 10px;
+}
+.account-number, .iban{
+    width: 92%;
+    margin: 20px auto;
+    border-radius: 30px;
+    font-family: 'titamium Regular';
+    --padding-start: 20px;
+}
+.connect-btn{
+    margin: 0px 20px;
+    border-radius: 20px;
+    --border-radius: 20px;
+    width: 38%;
+}

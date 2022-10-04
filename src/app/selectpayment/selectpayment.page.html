@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-toolbar>
+    <app-header></app-header>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <h3 class="select-payment-txt">{{ 'select_payments' | translate }}</h3>
+  <hr class="line-break">
+   <!--Payments-->
+   <div class="send-money-div">
+    <h3>{{ 'bill_payments' | translate }}</h3>
+  </div>
+  <ion-row class="categories-wrap-row">
+    <ion-col class="ion-text-center">
+      <div (click)="openCategory('electricity')" class="categories-wrap-div btn">
+        <img class="bundle-icon" src="assets/imgs/power-tower.svg">
+        <h3>
+          {{ 'electricity' | translate }}
+        </h3>
+      </div>
+    </ion-col>
+    <ion-col class="ion-text-center">
+      <div (click)="openCategory('electricity')" class="categories-wrap-div btn">
+        <img class="bundle-icon" src="assets/imgs/006-telephone.svg">
+        <h3>
+          {{ 'telephone' | translate }}
+        </h3>
+      </div>
+    </ion-col>
+    <ion-col class="ion-text-center">
+      <div (click)="openCategory('electricity')" class="categories-wrap-div btn">
+        <img class="bundle-icon" src="assets/imgs/007-fire.svg">
+        <h3>
+          {{ 'gas' | translate }}
+        </h3>
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row class="categories-wrap-row">
+    <ion-col class="ion-text-center">
+      <div (click)="openCategory('electricity')" class="categories-wrap-div btn">
+        <img class="bundle-icon" src="assets/imgs/008-world.svg">
+        <h3>
+          {{ 'internet' | translate }}
+        </h3>
+      </div>
+    </ion-col>
+    <ion-col class="ion-text-center">
+      <div (click)="openCategory('electricity')" class="categories-wrap-div btn">
+        <img class="bundle-icon" src="assets/imgs/009-drops.svg">
+        <h3>
+          {{ 'water' | translate }}
+        </h3>
+      </div>
+    </ion-col>
+    <ion-col class="ion-text-center">
+      <div (click)="openCategory('credit-card')" class="categories-wrap-div btn">
+        <img class="bundle-icon" src="assets/imgs/010-credit-card.svg">
+        <h3>
+          {{ 'credit_card' | translate }}
+        </h3>
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row class="categories-wrap-row">
+    <ion-col class="ion-text-center">
+      <div (click)="openCategory('electricity')" class="categories-wrap-div btn">
+        <img class="bundle-icon" src="assets/imgs/011-mortarboard.svg">
+        <h3>
+          {{ 'education' | translate }}
+        </h3>
+      </div>
+    </ion-col>
+    <ion-col class="ion-text-center">
+      <div (click)="openCategory('electricity')" class="categories-wrap-div btn">
+        <img class="bundle-icon" src="assets/imgs/013-crown.svg">
+        <h3>
+          {{ 'gov_fees' | translate }}
+        </h3>
+      </div>
+    </ion-col>
+    <ion-col>
+    </ion-col>
+  </ion-row>
+</ion-content>

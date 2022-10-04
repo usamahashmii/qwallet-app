@@ -1,0 +1,196 @@
+.select-contact-txt, .select-bundles-txt{
+    font-size: 16px;
+    font-family: 'titamium Regular';
+    padding: 20px 20px 0px 30px;
+}
+ion-segment{
+    width: 90%;
+    margin: 20px auto;
+    height: 38px;
+}
+.select-frequently-used{
+    font-size: 14px;
+    padding: 0px 30px 0px 20px;
+}
+//scrollable favorite categories div
+.favorites-categories-row{
+    display: flex;
+    overflow: scroll;
+    padding: 0px 12px;
+    div{
+        div{
+            margin: 5px;
+            text-align: center;
+            align-items: center;
+            display: grid;
+            height: 90px;
+            min-width: 92px;
+            div{
+                font-size: 10px;
+                border-radius: 50%;
+                min-width: 40px;
+                height: 40px;
+                margin: 0 auto;
+                display: grid;
+                align-items: center;
+                margin-top: 3px;
+                margin-bottom: 8px;
+                color: #fff;
+                font-family: "titamium bold";
+                }
+            h3{
+                font-size: 12px;
+                margin-top: 3px;
+                overflow: hidden;
+                font-family: "titamium semi";
+                height: 2.5em;
+            }
+            img{
+                width: 12px;
+                position: relative;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                display: none;
+            }
+        }
+    }
+}
+.select-contact{
+    font-size: 15px;
+    font-family: 'titamium semi';
+    padding: 0px 20px 0px 22px;
+}
+.carousel{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+.form-control{
+    height: 45px;
+    font-family: 'titamium Regular';
+    font-size: 15px;
+    --padding-end: 3em;
+    --padding-start: 20px;
+    background: #edf2f6;
+}
+.vl{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 9999;
+    right: 0;
+    top: 0;
+    top: 0;
+    height: 45px;
+    div{
+        border-left: 1px solid #828588;
+        height: 20px;
+    }
+}
+.invite-user-img{
+    width: 24px;
+    margin: 10px;
+}
+.next-btn{
+    width: 90%;
+    float: unset;
+}
+//Bundle Part
+.network-scroll-wrap-div{
+    display: flex;
+    overflow: scroll;
+    background: #ccc;
+    padding: 10px;
+    div{
+        border-right: 1px solid #a9a9a9;
+        margin-right: 10px;
+        padding-right: 10px;
+        .network-name{
+            font-size: 16px;
+            margin: 0px;
+            --background: #ccc;
+            border: none;
+            text-transform: capitalize;
+            --box-shadow: none;
+            border-radius: 12px;
+            --border-radius: 12px;
+            position: relative;
+            img{
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            h3{
+                visibility: hidden;
+            }
+        }
+    }
+}
+.network-shadow-class{
+    --box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #ffffff !important;
+}
+//Packages Details
+.package-wrap-div{
+    padding: 20px 20px 5px 20px;
+    width: 88%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 25px;
+    .onnet-min-txt, .offnet-min-txt, .sms-txt, .gb-txt{
+        font-size: 9px;
+        margin: 0;
+    }   
+    .onnet-min-val, .offnet-min-val, .sms-val, .gb-val{
+        font-size: 10px;
+        margin: 0;
+        font-family: 'titamium semi';
+
+    }
+    span{
+        border-right: 1px solid #a59393;
+        height: 25px;
+        margin: 0px 15px 0px 15px;
+    }
+}
+.btn-bundle-cards{
+    position: relative;
+    letter-spacing: 0.025em;
+    font-size: 1rem;
+    border-color: #D1D9E6 !important;
+    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+    border-radius: 0.55rem;
+    display: inline-block;
+    font-weight: 400;
+    color: #44476A;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 0.0625rem solid transparent;
+}
+.package-duration{
+    font-size: 12px;
+    margin: 12px 0px;
+    color: #6b6b6b;
+    margin-bottom: 0;
+}
+.easy-card-txt, .package-days-count{
+    font-size: 14px;
+    font-family: 'titamium semi';
+    margin-bottom: 2px;
+}
+.easy-card-price{
+    font-size: 14px;
+}
+.buy-now-btn{
+    background: #171717;
+    padding: 5px 10px 5px 10px;
+    font-size: 9px;
+    border-radius: 6px;
+    color: #fff;
+}
+.btn:active{
+    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+}

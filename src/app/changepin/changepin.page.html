@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <app-header></app-header>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="pin-wrap-div">
+    <h3 class="change-pin-text">{{ 'change_pin' | translate }}</h3>
+    <h4 class="enter-old-pin-text"><img src="assets/imgs/padlock.svg">{{ 'enter_your_five_digit_pin' | translate }}</h4>
+    <div class="ion-display-flex input-code-div">
+      <ion-input #Field1 (keyup)="gotoNextField(Field2 , $event)" class="pin-code-input form-control" [disabled]="showPinDiv"></ion-input>
+      <ion-input #Field2 (keyup)="gotoNextField(Field3 , $event)" class="pin-code-input form-control" [disabled]="showPinDiv"></ion-input>
+      <ion-input #Field3 (keyup)="gotoNextField(Field4 , $event)" class="pin-code-input form-control" [disabled]="showPinDiv"></ion-input>
+      <ion-input #Field4 (keyup)="gotoNextField(Field5 , $event)" class="pin-code-input form-control" [disabled]="showPinDiv"></ion-input>
+      <ion-input #Field5 (keyup)="finishFunction(Field2)" class="pin-code-input form-control" [disabled]="showPinDiv"></ion-input>
+    </div>
+
+    <div class="ion-visibilty-hidden" [class.ion-visibilty-visible]="showPinDiv">
+      <!---->
+      <h4 class="enter-old-pin-text"><img src="assets/imgs/padlock.svg">{{ 'create_your_pin' | translate }}</h4>
+      <div class="ion-display-flex input-code-div">
+        <ion-input #Field6 (keyup)="gotoNewNextField(Field7 , $event)" class="pin-code-input form-control"></ion-input>
+        <ion-input #Field7 (keyup)="gotoNewNextField(Field8 , $event)" class="pin-code-input form-control"></ion-input>
+        <ion-input #Field8 (keyup)="gotoNewNextField(Field9 , $event)" class="pin-code-input form-control"></ion-input>
+        <ion-input #Field9 (keyup)="gotoNewNextField(Field10 , $event)" class="pin-code-input form-control"></ion-input>
+        <ion-input #Field10 (keyup)="finishNewFunction(Field7)" class="pin-code-input form-control"></ion-input>
+      </div>
+      <!---->
+      <h4 class="enter-old-pin-text"><img src="assets/imgs/padlock.svg">{{ 'reenter_your_five_digit_pin' | translate }}</h4>
+      <div class="ion-display-flex input-code-div">
+        <ion-input #Field11 (keyup)="gotoReNextField(Field12 , $event)" class="pin-code-input form-control"></ion-input>
+        <ion-input #Field12 (keyup)="gotoReNextField(Field13 , $event)" class="pin-code-input form-control"></ion-input>
+        <ion-input #Field13 (keyup)="gotoReNextField(Field14 , $event)" class="pin-code-input form-control"></ion-input>
+        <ion-input #Field14 (keyup)="gotoReNextField(Field15 , $event)" class="pin-code-input form-control"></ion-input>
+        <ion-input #Field15 (keyup)="finishReFunction(Field12)" class="pin-code-input form-control"></ion-input>
+      </div>
+      <ion-button (click)="changePin()" class="change-pin-btn">{{ 'change_pin' | translate }}</ion-button>
+    </div>
+   
+  </div>
+  
+</ion-content>

@@ -1,0 +1,130 @@
+
+.sphere-wrap-div, .sphere-wrap-div-send-to{
+    align-items: center;
+    width: 90%;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    margin-top: 20px;
+}
+.sphere-wrap-div-send-to{
+    margin-top: 8px !important;
+}
+.sphere-tag, .sphere-tag-send-to{
+    background: #f9d088;
+    border-radius: 50%;
+    height: 40px;
+    min-width: 40px;
+    display: grid;
+    align-items: center;
+    position: relative;
+    h3{
+        font-size: 13px;
+        font-family: 'titamium semi';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+    }
+    img{
+        min-width: 16px;
+        height: 16px;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+    }
+}
+.sphere-tag-send-to{
+    background: #8fd7c0 !important;
+}
+.sphere-desc-div{
+    background: #dbdbdb;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 32px;
+    border-radius: 4px;
+    margin: 5px;
+    width: 100%;
+    h3{
+        font-size: 12px;
+        font-family: "titamium Regular";
+        margin: 0;
+        letter-spacing: 0.5px;
+    }
+    .view-all{
+        color: #cc0000;
+    }
+}
+.inputs-wrap-div{
+    width: 88%;
+    margin: 2em auto;
+    ion-input, ion-textarea{
+        height: 45px;
+        font-size: 15px;
+        font-family: 'titamium semi';
+        margin-bottom: 10px;
+        background: none;
+    }
+    ion-textarea{
+        height: 85px;
+        padding: 4px;
+    }
+}
+.char-count{
+    margin: 0;
+    font-size: 10px;
+    text-align: right;
+    margin-right: 5px;
+    font-family: 'titamium Regular';
+}
+.next-btn{
+    width: 100%;
+}
+//drop down div (select your bank)
+.select-bank-div{
+    margin: 25px auto 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+    transition: none;
+    background: none;
+    h3{
+        font-size: 16px;
+        font-family: 'titamium semi';
+        margin: 0;
+    }
+    img{
+        width: 16px;
+    }
+}
+.select-bank-div-active{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.banks-div{
+    // transition: all 0.3s ease-in-out;
+    visibility: visible;
+    background: #edf2f6;
+    width: 88%;
+    margin: 0 auto;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    height: auto;
+    margin-top: -12px;
+    position: absolute;
+    z-index: 9999;
+    left: 50%;
+    transform: translateX(-50%);
+    h3{
+        font-size: 16px;
+        font-family: 'titamium semi';
+        border-bottom: 1px solid #ababab;
+        padding-bottom: 10px;
+    }
+}

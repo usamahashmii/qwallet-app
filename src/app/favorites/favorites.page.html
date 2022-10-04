@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <app-header></app-header>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+   <!--Favorites-->
+   <h3 class="favorites-text">{{ 'favorite_payees' | translate }}</h3>
+   <div class="favorites-categories-row ion-margin-top-8">
+     <div (click)="openSendMoney()" *ngFor="let val of favoritesArray; let i=index" class="ion-display-flex ion-align-items-center ion-justify-content-between shadow-soft">
+      <div class="ion-display-flex ion-align-items-center">
+        <div [ngStyle]="{'backgroundColor' : getColor(i)}">{{ getFirstChar(val.name) }}</div>
+        <h3>{{ val.name }}</h3>
+      </div>
+      <h3>{{ val.cellno }}</h3>
+     </div>
+   </div>
+</ion-content>

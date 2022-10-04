@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <app-header></app-header>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div (click)="getCard()" class="card-wrap-div" *ngFor="let val of cardsArray">
+    <img src="{{ val.image }}">
+    <h3>{{ val.text }}</h3>
+  </div>
+ 
+</ion-content>

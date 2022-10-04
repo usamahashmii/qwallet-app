@@ -1,0 +1,21 @@
+<ion-content>
+  <h3 class="faqs-txt">{{ 'faq' | translate }}</h3>
+  <hr class="separator">
+  <ng-container *ngFor="let val of questionArray">
+    <div class="question-wrap-div shadow-inset">
+      <div (click)="expandStoreItem(val)" class="ion-display-flex question-div">
+        <h3 class="categories">{{ val.qsTitle }}</h3>
+        <img style="width: 14px;" *ngIf="!val.expanded" src="assets/imgs/arrow-down-gray.svg">
+        <img style="width: 14px;" *ngIf="val.expanded" src="assets/imgs/arrow-up-gray.svg">
+      </div>
+      <app-askdropdown expandHeight="1000px" [expanded]="val.expanded">
+        <div *ngIf="val.ansDetails?.length > 0" class="subcategories-div expand-wrapper" #expandWrapper [class.collapsed]="!val.expanded">
+          <ng-container *ngFor="let obj of val.ansDetails">
+            <h4 class="answer-txt">{{ obj.ansTitle }}</h4>
+          </ng-container>
+        </div>
+      </app-askdropdown>
+    </div>
+    <!---->
+  </ng-container> 
+</ion-content>

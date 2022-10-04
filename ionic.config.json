@@ -1,0 +1,7 @@
+{
+  "name": "qwallet",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

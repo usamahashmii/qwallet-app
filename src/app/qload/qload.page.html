@@ -1,0 +1,89 @@
+<ion-header>
+  <ion-toolbar>
+    <app-header></app-header>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <h3 *ngIf="segmentSelected == 'qload'" class="select-contact-txt">{{ 'select_contact' | translate }}</h3>
+  <h3 *ngIf="segmentSelected == 'qbundle'" class="select-bundles-txt">Select Bundles</h3>
+  <hr>
+  <ion-segment (ionChange)="switchSegment($event)" value="qload" mode="ios">
+    <ion-segment-button value="qload">
+      <ion-label>{{ 'qload' | translate }}</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="qbundle">
+      <ion-label>{{ 'qbundle' | translate }}</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  <ng-container *ngIf="segmentSelected == 'qload'">  
+    <h3 class="select-frequently-used">{{ 'select_frequently_used' | translate }}</h3>
+    <div class="favorites-categories-row ion-margin-top-8">
+      <ng-container *ngFor="let val of favoritesArray; let i=index">
+        <div>
+          <div (click)="chooseNumber(val)" class="favorites-categories-wrap" class="shadow-soft btn">
+            <div class="name-div-home" [ngStyle]="{'backgroundColor' : getColor(i)}">{{ getFirstChar(val.name) }}</div>
+            <h3>{{ val.name }}</h3>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+    <hr>
+    <h3 class="select-contact">*{{ 'select_contact' | translate }}</h3>
+    <div class="carousel">
+      <ion-input [(ngModel)]="contact" type="text" class="form-control" placeholder="{{ 'enter_number' | translate }}"></ion-input>
+      <div class="vl"><div></div><img class="invite-user-img" src="assets/imgs/invite-user.svg"></div>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="segmentSelected == 'qbundle'">
+    <div class="network-scroll-wrap-div">
+      <div *ngFor="let value of callingNetworks" (click)="chooseNetwork(value)">
+        <ion-button class="network-name" [class.network-shadow-class]="value.name == selectedNetwork">
+          <img src="{{ value.img }}">
+          <h3>Hello</h3>
+        </ion-button>
+        <span></span>
+      </div>  
+    </div>
+
+    <!--Packages details-->
+    <ng-container *ngFor="let val of [1,2,3,4]">
+      <div class="btn-bundle-cards package-wrap-div">
+        <div class="ion-display-flex ion-justify-content-evenly">
+          <div>
+            <h3 class="onnet-min-txt">Onnet Min</h3>
+            <h3 class="onnet-min-val">1500</h3>
+          </div>
+          <span></span>
+          <div>
+            <h3 class="offnet-min-txt">Offnet Min</h3>
+            <h3 class="offnet-min-val">500</h3>
+          </div>
+          <span></span>
+          <div>
+            <h3 class="sms-txt">SMS</h3>
+            <h3 class="sms-val">3000</h3>
+          </div>
+          <span></span>
+          <div>
+            <h3 class="gb-txt">GB</h3>
+            <h3 class="gb-val">6</h3>
+          </div>
+        </div>
+        <h3 class="package-duration">4GB + 3GB (1AM - 12PM)</h3>
+        <div class="ion-display-flex ion-justify-content-between">
+          <h3 class="easy-card-txt">Easy Card</h3>
+          <h3 class="easy-card-price">QCoins 40</h3>
+        </div>
+        <div class="ion-display-flex ion-justify-content-between">
+          <h3 class="package-days-count">7 Days Package</h3>
+            <h3 (click)="qloadNext()" class="buy-now-btn">{{ 'buy_now' | translate }}</h3>          
+        </div>
+      </div>
+    </ng-container>
+  </ng-container>
+  <ion-row *ngIf="segmentSelected == 'qload'">
+    <ion-col class="ion-text-center">
+      <ion-button (click)="qloadNext()" class="next-btn">{{ 'next' | translate }}</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>

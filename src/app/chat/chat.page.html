@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <app-header></app-header>
+  </ion-toolbar>
+</ion-header>
+<ion-content #content>
+  <div class="header-div">
+    <h3 class="qwallet-support">{{ 'QWallet_Support' | translate }}</h3>
+    <hr class="separator">
+  </div>
+  <div class="ion-margin-10 chatting-wrapping-div">
+    <ng-container *ngFor="let chat of chatArray">
+      <div class="support-wrap-div" [class.customer-wrap-div]="chat.type == 'customer'">
+
+        <div class="support-div" [class.customer-div]="chat.type == 'customer'">
+          <div [class.support-arrow-down-div]="chat.type == 'support'" [class.customer-arrow-down-div]="chat.type == 'customer'">
+            <div class="arrow-down"></div>  
+          </div>
+
+          <h3>{{ chat.message }}</h3>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <!--Short Texts-->
+
+    <div class="tags-div">
+      <ion-button (click)="sendShortMessage('its_ok')" class="btn-primary" id="tags-btn">{{ 'its_ok' | translate }}</ion-button>
+      <ion-button (click)="sendShortMessage('money_received')" class="btn-primary" id="tags-btn">{{ 'money_received' | translate }}</ion-button>
+      <ion-button (click)="sendShortMessage('sending_money')" class="btn-primary" id="tags-btn">{{ 'sending_money' | translate }}</ion-button>
+      <ion-button (click)="sendShortMessage('haha_funny')" class="btn-primary" id="tags-btn">{{ 'haha_funny' | translate }}</ion-button>
+      <ion-button (click)="sendShortMessage('thanks')" class="btn-primary" id="tags-btn">{{ 'thanks' | translate }}</ion-button>
+      <ion-button (click)="sendShortMessage('you_are_kind')" class="btn-primary" id="tags-btn">{{ 'you_are_kind' | translate }}</ion-button>
+    </div>
+    <!--send message div-->
+    <div class="footer-div">
+      <ion-input [(ngModel)]="messageTxt" type="text" class="form-control type-input" placeholder="Type your message here"></ion-input>
+      <div class="send-btn-div ripple-parent ion-activatable">
+        <img (click)="send()" src="assets/imgs/send.svg">
+        <!-- <ion-ripple-effect></ion-ripple-effect> -->
+      </div>
+    </div> 
+  </ion-toolbar> 
+</ion-footer>

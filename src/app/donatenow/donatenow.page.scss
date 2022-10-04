@@ -1,0 +1,40 @@
+.donations-txt{
+    font-size: 16px;
+    margin: 3em 0em 0em 0em;
+    text-align: center;
+    font-family: 'titamium Regular';
+}
+.separator{
+    border-top: 1px solid #cecece;
+}
+.ion-align-items-center{
+    margin: 0px 20px;
+}
+.center-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.center-name{
+    margin: 0;
+    font-size: 16px;
+    font-family: 'titamium Regular';
+    margin-left: 10px;
+}
+.form-control{
+    background: none;
+    font-family: 'titamium Regular';
+    font-size: 14px;
+    width: 88%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+}
+.donate-now-btn{
+    float: unset;
+    width: 88%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}

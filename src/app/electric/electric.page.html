@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <app-header></app-header>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h3 class="select-payment-txt">{{ 'select_payments' | translate }}</h3>
+  <hr class="line-break">
+   <!--Payments-->
+   <div class="send-money-div">
+    <h3>{{ 'bill_payments' | translate }}</h3>
+  </div>
+  <ion-row class="categories-wrap-row">
+    <ion-col size="4" *ngFor="let val of electricCompArray" class="ion-text-center">
+      <div (click)="openCategory(val)" class="categories-wrap-div btn">
+        <img class="bundle-icon" src="{{ val.image }}">
+        <h3>
+         {{ val.name }}
+        </h3>
+      </div>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

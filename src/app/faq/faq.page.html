@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <app-header></app-header>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img class="help-faq-main-img" src="assets/imgs/faq icon/help_faq_img.jpg">
+  <h3 class="how-can-help-text">{{ 'how_can_we_help' | translate }}</h3>
+  <hr class="separator">
+  <ion-row class="ion-margin">
+    <ion-col class="btn help-faq-wrap-col">
+      <div class="ion-display-flex help-faq-wrap-div">
+        <h3 class="faq-help-title">{{ 'about' | translate }}</h3>
+        <img class="help-faq-qwallet-logo" src="assets/imgs/faq icon/q-wallet-block.png">
+      </div>
+      <div class="ion-display-flex ion-justify-content-between">
+        <h3 class="faq-help-desc">{{ 'all_the_information_about_qwallet' | translate }}</h3>
+        <img class="right-arrow" src="assets/imgs/001-right-arrow-angle.svg">
+      </div>
+    </ion-col>
+
+    <ion-col class="btn help-faq-wrap-col">
+      <div class="ion-display-flex help-faq-wrap-div">
+        <h3 class="faq-help-title">{{ 'ask' | translate }}</h3>
+        <img class="help-faq-normal-icons" src="assets/imgs/faq icon/002-help.svg">
+      </div>
+      <div class="ion-display-flex ion-justify-content-between">
+        <h3 class="faq-help-desc">{{ 'all_the_information_about_qwallet' | translate }}</h3>
+        <img class="right-arrow" src="assets/imgs/001-right-arrow-angle.svg">
+      </div>
+    </ion-col>
+  </ion-row>
+  <!---->
+  <ion-row class="ion-margin">
+    <ion-col class="btn help-faq-wrap-col">
+      <div class="ion-display-flex help-faq-wrap-div">
+        <h3 class="faq-help-title">{{ 't_c' | translate }}</h3>
+        <img class="help-faq-normal-icons" src="assets/imgs/faq icon/004-hand-shake.svg">
+      </div>
+      <div class="ion-display-flex ion-justify-content-between">
+        <h3 class="faq-help-desc">{{ 'all_the_information_about_qwallet' | translate }}</h3>
+        <img class="right-arrow" src="assets/imgs/001-right-arrow-angle.svg">
+      </div>
+    </ion-col>
+
+    <ion-col class="btn help-faq-wrap-col">
+      <div class="ion-display-flex help-faq-wrap-div">
+        <h3 class="faq-help-title">{{ 'privacy_policy' | translate }}</h3>
+        <img class="help-faq-normal-icons" src="assets/imgs/faq icon/003-audit.svg">
+      </div>
+      <div class="ion-display-flex ion-justify-content-between">
+        <h3 class="faq-help-desc">{{ 'all_the_information_about_qwallet' | translate }}</h3>
+        <img class="right-arrow" src="assets/imgs/001-right-arrow-angle.svg">
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-button (click)="goToChatbox()" class="chat-support-btn">{{ 'chat_with_support' | translate }}</ion-button>
+</ion-content>

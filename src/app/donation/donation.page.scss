@@ -1,0 +1,24 @@
+.donations-txt{
+    font-size: 16px;
+    margin: 3em 0em 0em 0em;
+    text-align: center;
+    font-family: 'titamium Regular';
+}
+.separator{
+    border-top: 1px solid #cecece;
+}
+.donation-center-img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    object-position: 20% 20%;
+    border-radius: 10px;
+}
+.donation-center-name{
+    font-size: 14px;
+    margin-top: 10px;
+    font-family: 'titamium Regular';
+}
+.ion-text-center{
+    padding: 8px;
+}

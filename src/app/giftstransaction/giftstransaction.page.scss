@@ -1,0 +1,90 @@
+.header-wrap-div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.shadow-soft{
+    margin: 2em 25px;
+    padding: 20px;
+    img{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90px;
+        margin-bottom: 14px;
+    }
+}
+.transaction-success-text{
+    font-size: 18px;
+    text-align: center;
+    font-family: 'titamium semi';
+}
+.transaction-desc{
+    font-size: 18px;
+    text-align: center;
+    font-family: 'titamium regular';
+}
+.carousel{
+    margin-top: 2.3em;
+}
+.separator{
+    margin: 0;
+    border-bottom: 1px solid #d1d3d4;
+}
+.check-box-div{
+    background: #17a200;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: grid;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -27px;
+    img{
+        width: 30px;
+        margin: 0;
+        filter: invert(1);
+    }
+}
+.background-pink{
+    background: #b20045;
+}
+.background-green{
+    background: #006666;
+}
+.background-blue{
+    background: #003399;
+}
+.param-txt{
+    text-align: center;
+    font-family: 'titamium semi';
+    margin: -20px 0px 20px 0px;
+    font-size: 15px;
+}
+.detail-wrap-div, .operator-div, .amount-div, .charges-div, .total-amount-div{
+    margin-bottom: 20px;
+    h3{
+        font-size: 16px;
+        font-family: 'titamium Regular';
+        margin-bottom: 2px;
+    }
+}
+.icon-wrap-col{
+    align-items: center;
+    display: grid;
+    justify-content: end;
+}
+.icon-wrap-div{
+    display: grid;
+    img{
+        width: 20px;
+        margin-bottom: 1.5em;
+    }
+}
+.go-to-home-btn{
+    width: 100%;
+    margin: 0;
+    float: unset;
+}

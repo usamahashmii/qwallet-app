@@ -1,0 +1,61 @@
+.transaction-history{
+    margin: 12px 20px 0px 20px;
+    font-size: 19px;
+    font-family: 'titamium semi';
+}
+mat-form-field{
+    font-size: 16px;
+    font-weight: 500;
+    width: 48%;
+}
+.duration-text-div{
+    width: 48%;
+    display: grid;
+    align-items: center;
+    h4{    
+        font-size: 14px;
+        margin: 0;
+        font-family: "titamium semi";
+        text-align: center;
+    }
+}
+//Transactions Report
+.transaction-wrap-div{
+    height: 300px;
+    width: 98%;
+    margin: 10px auto;
+    overflow: scroll;
+}
+.transaction-detail-div{
+    border-bottom: 1px solid #bfc5ca;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    background: #edf2f6;
+    border: 1px solid #bfd0d8;
+    div{
+        h3{
+            font-size: 16px;
+            font-family: 'titamium semi';
+            margin: 0;
+            display: flex;
+        }
+        h4{
+            font-size: 15px;
+            font-family: 'titamium regular';
+            margin: 0;
+            color: #d40000;
+        }
+    }
+}
+.green-color{
+    color: #0b9600 !important;
+}
+.download-report-btn{
+    margin: 20px 5px;
+}
+.view-img-file-icon{
+    width: 14px;
+    margin-right: 4px;
+}

@@ -1,0 +1,137 @@
+
+//Refreshing div CSS
+.refreshing-wrap-div{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  border-radius: 5px;
+  padding: 5px 0px;
+  align-items: center;
+}
+.profile-img{
+  margin: 0;
+  width: 56px !important;
+  height: 56px !important;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  border-radius: 50%;
+  object-fit: cover !important;
+  margin-right: 15px;
+}
+.last-update-text{
+  font-size: 15px;
+  font-family: 'titamium semi';
+  margin: 0;
+  text-transform: capitalize;
+}
+.date, .time{
+  font-size: 13px;
+  font-family: "titamium semi";
+  margin: 0;
+}
+.refreshing-icon{
+  width: 20px;
+  height: 20px;
+}
+//Money Blocks Div
+ion-card{
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  margin-right: 10px;
+  height: 70px;
+  display: grid;
+  align-items: center;
+  ion-card-content{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+.last-money-block-card{
+  margin: 0;
+}
+.money-block-wrap-div{
+  justify-content: space-between;
+    margin: 20px;
+}
+.send-money-icon, .bundle-icon, .card-icon, .shopping-icon{
+  max-width: 20px;
+  height: 19px;
+}
+.send-money-text, .bundle-text, .card-text, .shopping-text{
+  font-size: 10px;
+  font-family: "titamium semi";
+  margin-top: 4px;
+  margin-bottom: 0;
+  color: var(--ion-color-theme-text);
+}
+//advert div
+.advert-wrap-div{
+  background: var(--ion-color-theme-background-text);
+  h4{
+    font-size: 12px;
+    color: #fff;
+    padding: 10px 10px;
+    text-align: center;
+  }
+}
+//Categories part
+.category-icon{
+  width: 28px;
+  fill: #9da0ad;
+  height: 28px;
+}
+.category-text{
+  font-size: 12px;
+  font-family: "titamium semi";
+  margin-top: 4px;
+  margin-bottom: 0;
+  color: var(--ion-color-theme-text);
+}
+.cat-widgets-col{
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+//shortcuts & widgets
+.short-cut-widget-icon{
+  width: 17px;
+  margin-right: 8px;
+}
+.short-cut-widget-text{
+  font-size: 10px;
+  font-family: "titamium semi";
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+}
+.short-cut-widget-col{
+  border-radius: 5px;
+  text-align: center;
+  margin-right: 10px;
+  display: grid;
+  align-items: center;
+  height: 35px;
+  justify-content: center;
+}
+.more-text-col{
+  border: 1px solid #e0e0e0;
+  border-radius: 7px;
+}
+.more-text{
+  font-size: 12px;
+  margin-top: 3px;
+  overflow: hidden;
+  font-family: "titamium semi";
+  margin-bottom: 0;
+}
+.menu-dot-icon{
+  width: 13px;
+  position: unset;
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0%;
+}

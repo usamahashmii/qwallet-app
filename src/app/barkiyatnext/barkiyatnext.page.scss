@@ -1,0 +1,62 @@
+.category-img{
+    width: 40px;
+    height: 40px;
+}
+.category-name{
+    font-size: 12px;
+    font-family: 'titamium Regular';
+    margin: 10px 0px 0px 0px;
+}
+.line-break{
+    border-top: 1.5px solid #ccc8c8 !important;
+}
+.qcoins-count-div-wrap{
+    h4, h3{
+        font-size: 16px;
+        font-family: 'titamium semi';
+        margin: 0;
+    }
+    h3{
+        margin-right: 25px;
+    }
+}
+.available-balance{
+    color: #297046;
+    text-align: center;
+    font-size: 15px;
+    margin: 2em 0px 0.5em 0px;
+}
+.limit-wont-apply-on-bill{
+    font-size: 13px;
+    text-align: center;
+}
+.bill-details{
+    text-align: center;
+    font-size: 15px;
+    margin: 3em 0px 0em 0px;;
+}
+.bill-details-wrap-div{
+    width: 77%;
+    margin: 0 auto;
+}
+.bill-details-div{
+    h3{
+        font-size: 16px;
+        font-family: 'titamium Regular'
+    }
+    h4{
+        font-size: 15px;
+        font-family: 'titamium Regular';
+    }
+}
+.next-btn{
+    float: unset;
+    width: 78%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 25px;
+}
+.payment-status-val{
+    color: #981c1c;
+}

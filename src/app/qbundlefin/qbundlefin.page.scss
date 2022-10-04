@@ -1,0 +1,115 @@
+.select-bundles-txt{
+    font-size: 16px;
+    font-family: 'titamium Regular';
+    padding: 20px 20px 0px 30px;
+    text-align: center;
+}
+//Bundle Part
+.network-scroll-wrap-div{
+    display: flex;
+    overflow: scroll;
+    background: #ccc;
+    padding: 10px;
+    div{
+        border-right: 1px solid #a9a9a9;
+        margin-right: 10px;
+        padding-right: 10px;
+        .network-name{
+            font-size: 16px;
+            margin: 0px;
+            --background: #ccc;
+            border: none;
+            text-transform: capitalize;
+            --box-shadow: none;
+            border-radius: 12px;
+            --border-radius: 12px;
+            position: relative;
+            img{
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            h3{
+                visibility: hidden;
+            }
+        }
+    }
+}
+.network-shadow-class{
+    --box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #ffffff !important;
+}
+.carousel{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+.form-control{
+    height: 45px;
+    font-family: 'titamium Regular';
+    font-size: 15px;
+    --padding-end: 3em;
+    --padding-start: 20px;
+    background: #edf2f6;
+    margin-top: 30px;
+}
+.vl{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 9999;
+    right: 0;
+    top: 0;
+    top: 30px;
+    height: 45px;
+    div{
+        border-left: 1px solid #828588;
+        height: 20px;
+    }
+}
+.invite-user-img{
+    width: 24px;
+    margin: 10px;
+}
+.network-bottom-details{
+    h3{
+        margin: 0px 20px;
+        font-size: 16px;
+        font-family: "titamium semi";
+        margin-bottom: 10px;
+    }
+    h4{
+        margin: 0px 20px;
+        font-size: 14px;
+        font-family: 'titamium regular';
+    }
+    ion-button{
+        margin: 0px 16px;
+        border-radius: 20px;
+        --background: #589fe6;
+        --box-shadow: none;
+        font-size: 13px;
+        text-transform: capitalize;
+        height: 25px;
+        --border-radius: 20px;
+    }
+}
+.qcoins-txt{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'titamium semi';
+    margin-bottom: 0;
+}
+.qcoins-val{
+    text-align: center;
+    font-size: 23px;
+    font-family: 'titamium regular';
+}
+.pay-now-btn{
+    float: unset;
+    width: 85%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: capitalize;
+    font-family: 'titamium semi';
+}

@@ -1,0 +1,109 @@
+
+.close-btn-icon{
+    width: 16px;
+    position: absolute;
+    right: 0;
+    z-index: 999;
+    margin: 14px 16px 10px 10px;
+}
+//profile
+.main-menu-list{
+    position: absolute;
+    top: 13.5%;
+    z-index: 999;
+    transform: translateY(-50%);
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+}
+.name{
+    font-size: 17px;
+}
+
+//menu items
+.menu-items-div{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 40px;
+    h3{ 
+        font-size: 17px;
+        font-family: "titamium regular" !important;
+        margin-bottom: 20px;
+    }
+}
+//menu bottom
+.main-menu-bottom{
+    position: absolute;
+    bottom: 6px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    .logout-icon{
+        width: 20px;
+        // margin: 0px 1em;
+    }
+    h3{
+        font-size: 12px;
+        font-family: "titamium semi" !important;
+        margin-bottom: 0px;
+    }
+}
+.profile-img{
+    margin: 0;
+    width: 56px !important;
+    height: 56px !important;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    border-radius: 50%;
+    object-fit: cover !important;
+    margin-right: 25px;
+}
+
+//mat selection
+::ng-deep .mat-select-arrow-wrapper{
+    visibility: visible;
+}
+::ng-deep .mat-form-field-underline {
+    display: none;
+  }
+::ng-deep .mat-form-field.mat-focused .mat-form-field-underline {
+    display: none;
+}
+::ng-deep.mat-form-field-infix {
+    display: block;
+    position: relative;
+    flex: auto;
+    min-width: 0;
+    width: 180px;
+    margin-top: -20px !important;
+}
+::ng-deep.mat-primary .mat-option.mat-selected:not(.mat-option-disabled){
+    font-family: 'titamium semi';
+    font-size: 16px;
+}
+::ng-deep.mat-select-value-text{
+    color: #171717;
+    font-family: 'titamium semi';
+}
+//date picker
+::ng-deep.mat-form-field-appearance-fill .mat-form-field-flex {
+    padding: 0 !important;
+    font-size: 12px !important;
+    font-family: 'titamium semi';
+    background: none;
+}
+::ng-deep.mat-datepicker-content .mat-calendar {
+    font-family: 'titamium semi';
+}
+::ng-deep.mat-calendar-table-header {
+    font-family: 'titamium bold';
+}
+::ng-deep.mat-datepicker-content .mat-calendar{
+    background: #edf2f6;
+}
+::ng-deep.mat-calendar-body-selected{
+    background-color: #171717;
+}

@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <app-header></app-header>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <!--Money Transfer-->
+  <h3 class="money-transfer-text"><img src="assets/imgs/001-star.svg">{{ 'money_transfer' | translate }}</h3>
+  <div class="favorites-categories-row ion-margin-top-8">
+    <ng-container *ngFor="let val of favoritesArray; let i=index">
+      <div>
+        <div class="favorites-categories-wrap" class="shadow-soft btn">
+          <div class="name-div-home" [ngStyle]="{'backgroundColor' : getColor(i)}">{{ getFirstChar(val.name) }}</div>
+          <h3>{{ val.name }}</h3>
+        </div>
+        <h3 class="delete-btn">{{ 'delete' | translate }}</h3>
+      </div>
+    </ng-container>
+  </div>
+  <hr>
+  <!---->
+  <h3 class="money-transfer-text"><img src="assets/imgs/001-star.svg">{{ 'money_transfer' | translate }}</h3>
+  <div class="favorites-categories-row ion-margin-top-8">
+    <ng-container *ngFor="let val of favoritesArray; let i=index">
+      <div>
+        <div class="favorites-categories-wrap" class="shadow-soft btn">
+          <div class="name-div-home" [ngStyle]="{'backgroundColor' : getColor(i)}">{{ getFirstChar(val.name) }}</div>
+          <h3>{{ val.name }}</h3>
+        </div>
+        <h3 class="delete-btn">{{ 'delete' | translate }}</h3>
+      </div>
+    </ng-container>
+  </div>
+
+  <!--Pay Bills & Fee-->
+  <hr>
+  <h3 class="pay-bills-text"><img src="assets/imgs/001-star.svg">{{ 'pay_bill_fee' | translate }}</h3>
+  <div class="favorites-categories-row ion-margin-top-8">
+    <h3 class="no-favorites">{{ 'there_is_no_fav_yet' | translate }}</h3>
+  </div>
+
+  <!--Topups-->
+  <hr>
+  <h3 class="topups-text"><img src="assets/imgs/001-star.svg">{{ 'topups' | translate }}</h3>
+  <div class="favorites-categories-row ion-margin-top-8">
+    <h3 class="no-favorites">{{ 'there_is_no_topup_yet' | translate }}</h3>
+  </div>
+
+</ion-content>

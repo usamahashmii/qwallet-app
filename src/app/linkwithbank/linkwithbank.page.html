@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <app-header></app-header>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div (click)="selectBank()" class="select-bank-div form-control" [ngClass]="{ 'select-bank-div-active' : openBankDivBool }">
+    <h3>{{ selectedBank }}</h3>
+    <img [ngClass]="{ 'arrow-down-ani' : openBankDivBool }" [class.arrow-right-ani]="!openBankDivBool" src="assets/imgs/001-right-arrow-angle.svg">
+  </div>
+  <div *ngIf="openBankDivBool" class="banks-div form-control">
+    <h3 (click)="bankSelected(bank)" *ngFor="let bank of banksArray; let i = index">{{ bank.name }}</h3>
+  </div>
+  <ion-input placeholder="{{ 'Bank_account_number' | translate }}" class="form-control account-number"></ion-input>
+  <h4 class="or-text">*{{ 'OR' | translate }}</h4>
+  <ion-input placeholder="IBAN" class="form-control iban"></ion-input>
+  
+  <ion-button (click)="connect()" class="connect-btn">{{ 'connect' | translate }}</ion-button>
+</ion-content>

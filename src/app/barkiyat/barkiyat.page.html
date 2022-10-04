@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <app-header></app-header>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="Wrap-div">
+    <img class="category-icon" src="{{ image }}">
+    <div class="ajk-barkiyat-div">
+      <h3>{{ params.name }}</h3>
+    </div>
+  </div>
+  <hr class="line-break">
+  <ion-input class="form-control reference-input" placeholder="{{ 'enter_seven_digit_ref_number' | translate }}"></ion-input>
+  <ion-button (click)="goToNxt()" class="next-btn">{{ 'next' | translate }}</ion-button>
+</ion-content>

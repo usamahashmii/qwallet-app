@@ -1,0 +1,39 @@
+//Header
+ion-header{
+    background: #171717 !important;
+    ion-toolbar{
+        --background: #171717 !important;
+    }
+}
+.pin-wrap-div{
+    margin: 20px;
+}
+.change-pin-text{
+    font-size: 19px;
+    font-family: "titamium semi";
+}
+.enter-old-pin-text{
+    font-size: 17px;
+    font-family: 'titamium semi';
+    padding-top: 15px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    img{
+        width: 18px;
+        margin-right: 10px;
+    }
+}
+.input-code-div{
+    margin-top: 10px;
+}
+.pin-code-input{
+    height: 50px;
+    border-radius: 15px;
+    margin-right: 3px;
+    text-align: center;
+    font-weight: 600;
+}
+.change-pin-btn{
+    margin: 22px 8px;
+}

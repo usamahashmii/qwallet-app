@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="header-wrap-div">
+      <!-- <img (click)="goBack()" class="back-btn" src="assets/imgs/back-btn.svg"> -->
+      <img class="app-icon" src="assets/imgs/qwallet logo.png">
+    </div>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="shadow-soft">
+    <img class="app-icon" src="assets/imgs/transaction-details-icon/qtrans.png">
+    <h3 class="transaction-success-text">{{ 'transaction_successful' | translate }}</h3>
+    <h4 class="transaction-desc">{{ 'mobile_balance_has_been_added' | translate }}</h4>
+    <div class="carousel">
+      <hr class="separator">
+      <div class="check-box-div">
+        <img src="assets/imgs/transaction-details-icon/check.svg">
+      </div>
+    </div>
+    <!---->
+    <ion-row>
+      <ion-col class="ion-no-padding" size="8">
+        <div class="detail-wrap-div">
+          <h3>17-sep-2021</h3>
+          <h3>7:28 PM</h3>
+          <h3>ID# 981928101</h3>
+        </div>
+        <div class="operator-div">
+          <h3>{{ 'operator'| translate }}</h3>
+          <h3>Zong</h3>
+        </div>
+        <div class="amount-div">
+          <h3>{{ 'amount' | translate }}</h3>
+          <h3>600</h3>
+        </div>
+        <div class="charges-div">
+          <h3>{{ 'fee_charge' | translate }}</h3>
+          <h3>{{ 'no_charge' | translate }}</h3>
+        </div>
+        <div class="total-amount-div">
+          <h3>{{ 'total_amount' | translate }}</h3>
+          <h3>QCoins 140</h3>
+        </div>
+      </ion-col>
+      <ion-col class="icon-wrap-col">
+        <div class="icon-wrap-div">
+          <img src="assets/imgs/transaction-details-icon/001-star.svg">
+          <img src="assets/imgs/transaction-details-icon/004-share.svg">
+          <img src="assets/imgs/transaction-details-icon/002-download.svg">
+          <img src="assets/imgs/transaction-details-icon/003-files.svg">
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-button (click)="goHome()" class="go-to-home-btn">{{ 'go_to_home' | translate }}</ion-button>
+  </div>
+</ion-content>

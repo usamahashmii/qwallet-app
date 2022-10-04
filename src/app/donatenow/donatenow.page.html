@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+   <app-header></app-header>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <h3 class="donations-txt">{{ 'donations' | translate }}</h3>
+  <hr class="separator">
+  <div class="ion-display-flex ion-align-items-center">
+    <img class="center-img" src="{{ params.image }}">
+    <h3 class="center-name">{{ params.name }}</h3>
+  </div>
+  <ion-input class="form-control" placeholder="{{ 'enter_amount' | translate }}"></ion-input>
+  <ion-button (click)="donateNow()" class="donate-now-btn">{{ 'donate_now' | translate }}</ion-button>
+</ion-content>

@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <app-header></app-header>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <h4 class="transaction-history">{{ 'transaction_history' | translate }}</h4>
+  <hr>
+  <div class="ion-margin-10">
+    <div class="ion-display-flex ion-justify-content-around">
+      <mat-form-field class="form-control">
+        <mat-select [(ngModel)]="routineSelected" name="routineSelected" (selectionChange)="filterRoutine($event)">
+          <mat-option value="daily">{{ 'daily' | translate }}</mat-option>
+          <mat-option value="weekly">{{ 'weekly' | translate }}</mat-option>
+          <mat-option value="monthly">{{ 'monthly' | translate }}</mat-option>
+          <mat-option value="yearly">{{ 'yearly' | translate }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field class="form-control " appearance="fill">
+        <mat-label>{{ 'choose_a_date' | translate }}</mat-label>
+        <input (dateChange)="dateChanged($event)" matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+     <!--reports-->
+     <div id="transaction-histroy-id" class="transaction-wrap-div">
+      <div class="transaction-detail-div shadow-soft" *ngFor="let transaction of transactionHistory; let i = index" [class.no-border]="i == transactionHistory?.length - 1">
+        <div class="ion-display-flex ion-justify-content-between"><h3>{{ transaction.transactionWith }}</h3><h4 [class.green-color]="transaction.transactionType == 'bank'">{{ transaction.transactionValue }}</h4></div>
+        <div class="ion-display-flex ion-justify-content-between"><h3>{{ transaction.date }}</h3><h3 (click)="viewTransactionDettail(transaction)"><img class="view-img-file-icon" src="assets/imgs/001-file.svg"> {{ 'view' | translate }}</h3></div>
+      </div>
+    </div>
+    <ion-button (click)="downloadReport()" class="download-report-btn">{{ 'download_report'| translate }}</ion-button>
+  </div>
+
+</ion-content>

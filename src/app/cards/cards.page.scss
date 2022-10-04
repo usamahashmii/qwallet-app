@@ -1,0 +1,21 @@
+//Header
+ion-header{
+    background: #171717 !important;
+    ion-toolbar{
+        --background: #171717 !important;
+    }
+}
+.card-wrap-div{
+    img{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 20px 20px 0px 20px;
+    }
+    h3{
+        margin: 15px 0px;
+        font-size: 18px;
+        text-align: center;
+        font-family: 'titamium semi';
+    }
+}

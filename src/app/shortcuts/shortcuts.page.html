@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <app-header></app-header>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h3 class="short-cuts-txt">{{ 'add_short_cuts' | translate }}</h3>
+  <hr class="line-break">
+  <!--Categories choosen-->
+  <ion-row>
+    <ion-col size="4" *ngFor="let val of categoryWidgetsArray" class="ion-text-center cat-widgets-col">
+      <div class="carousel">
+        <img class="category-icon" src="{{ val.icon }}">
+        <img (click)="removeCategory(val)" class="remove-icon" src="assets/imgs/minus.svg">
+      </div>       
+      <h3 class="category-text">{{ val.name | translate }}</h3>
+    </ion-col>
+  </ion-row>
+  <!--Add more widgets-->
+  <hr class="line-break">
+  <ion-row class="ion-margin-top-15">
+    <ion-col size="4" *ngFor="let val of categoryAllWidgetsArray" class="ion-text-center cat-widgets-col">
+      <div class="carousel">
+        <img class="category-icon" src="{{ val.icon }}">
+        <img (click)="addCategory(val)" class="add-icon" src="assets/imgs/add.svg">
+      </div>       
+      <h3 class="category-text">{{ val.name | translate }}</h3>
+    </ion-col>
+  </ion-row>
+</ion-content>
